@@ -1,4 +1,4 @@
-package co.appreactor.feedparser
+package co.appreactor.feedk
 
 import java.net.URL
 import javax.xml.parsers.DocumentBuilderFactory

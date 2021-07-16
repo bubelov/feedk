@@ -1,4 +1,4 @@
-package co.appreactor.feedparser
+package co.appreactor.feedk
 
 import org.w3c.dom.Document
 import org.w3c.dom.Element

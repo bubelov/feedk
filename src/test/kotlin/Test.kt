@@ -1,4 +1,4 @@
-package co.appreactor.feedparser
+package co.appreactor.feedk
 
 import java.io.File
 import kotlin.test.Test

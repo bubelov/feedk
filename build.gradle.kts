@@ -10,7 +10,7 @@ plugins {
 val publishingProperties = loadProperties("publishing.properties")
 
 group = "co.appreactor"
-version = "0.1"
+version = "0.1.1"
 
 java {
     withJavadocJar()
