@@ -21,20 +21,47 @@ java {
 
 publishing {
     publications {
-        create<MavenPublication>("feedk") {
-            from(components["kotlin"])
+        create<MavenPublication>("mavenJava") {
+            from(components["java"])
+
+            pom {
+                name.set("feedk")
+                description.set("Web feed parser for Kotlin")
+                url.set("https://github.com/bubelov/feedk")
+
+                licenses {
+                    license {
+                        name.set("AGPL-3.0 License")
+                        url.set("https://www.gnu.org/licenses/agpl-3.0.en.html")
+                    }
+                }
+
+                developers {
+                    developer {
+                        id.set("bubelov")
+                        name.set("Igor Bubelov")
+                        email.set("igor@bubelov.com")
+                    }
+                }
+
+                scm {
+                    connection.set("scm:git:git@github.com:bubelov/feedk.git")
+                    developerConnection.set("scm:git:git@github.com:bubelov/feedk.git")
+                    url.set("https://github.com/bubelov/feedk")
+                }
+            }
         }
     }
 
     repositories {
         maven {
+            name = "nexus"
+            url = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
+
             credentials {
                 username = publishingProperties.getProperty("nexus.username")
                 password = publishingProperties.getProperty("nexus.password")
             }
-
-            name = "feedk"
-            url = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
         }
     }
 }
@@ -44,7 +71,7 @@ signing {
         publishingProperties.getProperty("signing.key"),
         publishingProperties.getProperty("signing.password")
     )
-    sign(publishing.publications["feedk"])
+    sign(publishing.publications["mavenJava"])
 }
 
 repositories {
