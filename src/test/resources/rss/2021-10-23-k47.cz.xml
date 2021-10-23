@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:wfw="http://wellformedweb.org/CommentAPI/"><channel><title>k47.cz</title><description/><link>https://k47.cz</link><atom:link rel="self" type="application/rss+xml" href="https://k47.cz/rss.xml"/>
+<item><title>Vtip</title><guid isPermaLink="true">https://k47.cz/2021/vtip.html?utm_medium=feed</guid><pubDate>Sat, 23 Oct 2021 00:10:00 +0200</pubDate><description>&lt;p&gt;Asi takhle: před ně­ja­kou dobou jsem na soc-netch udělal vtip, nebyl jsem si
+jistý, jestli bude nutně po­cho­pen, jak byl za­mýš­len &amp; po krátké době jsem ho
+smazal. Etuda skon­čila, přesto to ve mě hlo­dalo. Mojí cel­ko­vou stra­te­gií je, že
+když už ne­po­má­hám, tak se aspoň snažím nebýt ak­tivně de­struk­tivní. Tady
+jsem si ale nebyl jistý, jestli jsem skromné mety vůbec dostál.&lt;p&gt;Ok, teď ten vtip: &lt;i&gt;Exis­tují jen dvě po­hlaví: CISC a RISC&lt;/i&gt;.&lt;p&gt;V zá­vis­losti na svých zna­los­tech si to člověk může pře­lo­žit jako „exis­tují jen
+dvě po­hlaví a všichni lidi, co říkají něco jiného jsou blázni a ne­bez­peční
+pro­gre­sivní le­vi­coví ex­tre­misté“ nebo „striktní du­a­lita je zjed­no­du­šený pojem,
+který mohl být kdysi uži­tečný, ale ne­do­káže plně po­stih­nout re­a­litu ve všech
+de­tai­lech.“ Jistě taky cítíte, že se oba vý­znamy &lt;i&gt;po­ně­kud&lt;/i&gt; roz­chá­zejí. Záleží
+jen, jak moc se člověk vyzná v his­to­rii &amp; vývoji pro­ce­so­ro­vých ar­chi­tek­tur od
+osm­de­sá­tých let do dneška.&lt;p&gt;Kdyby někdo tápal, měl jsem na mysli va­ri­antu číslo dvě jako štouch­nutí do
+žeber esen­ci­a­listů, kteří po­pí­rají va­ri­a­bi­litu lidské exis­tence a při­zná­vají
+exis­tenci jen toho, co se vejde do ko­lonky for­mu­láře a/nebo co přesně od­po­vídá
+učivu prv­ního stupně zá­kladní školy.&lt;p&gt;CISC a RISC dnes už nic ne­zna­mená, v osm­de­sá­tých letech možná, jako prin­cip
+návrhu pro­ce­sorů, který se ra­di­kálně od­li­šil od sta­tutu quo své doby. V těch
+letech roz­dě­lení na CISC a RISC – &lt;i&gt;com­plex in­struction set com­pu­ter&lt;/i&gt; a &lt;i&gt;re­du­ced
+in­struction set com­pu­ter&lt;/i&gt; – dávalo smysl. RISC se ob­je­vil na scéně jako
+pro­ti­proud opu­lent­ních a ba­rok­ních CISC pro­ce­so­rům. Prin­cip byl prostý:
+zjed­no­du­šíme, co každá in­strukce dělá, práce na jed­notku bude méně, ale můžeme
+je pak sekat rych­leji, &lt;i&gt;pi­pe­li­no­vat&lt;/i&gt; je a jed­no­dušší návrh de­ko­déru dovolí
+ome­zený roz­po­čet tran­zis­torů použít tam, kde to bude co nej­e­fek­tiv­nější.&lt;p&gt;Co se od té doby změ­nilo? CISC de­fakto ne­e­xis­tuje. x86, dávaná jako pří­klad
+CISC ar­chi­tek­tur, je nejméně CISC ze všech CISCů, počet tran­zis­torů se zvedl
+100000×, vět­šina jich stejně padne na cache paměti a in­terně fun­gují na
+stej­ných prin­ci­pech jako RIS­Cové modely. ARM, RISC-V, x86, POWER, Z, uvnitř
+jsou to všechno &lt;i&gt;out of order&lt;/i&gt; mašiny, jež ar­chi­tek­to­nic­kou in­strukční sadu
+pře­klá­dají na in­terní μ-ope­race. Aspoň všechny vý­konné modely, které sjely z vý­rob­ních linek za po­sled­ních dvacet let a když říkám vý­konné, mám na mysli
+všechno od &lt;a href=https://drive.google.com/file/d/1WrMYCZMnhsGP4o3H33ioAUKL_bjuJSPt/view&gt;te­le­fonů&lt;/a&gt; k &lt;a href=https://raw.githubusercontent.com/fujitsu/A64FX/1b3071af0369ee02b1752b7556e949050349985d/doc/A64FX_Microarchitecture_Manual_en_1.3.pdf&gt;su­per­po­čí­ta­čům&lt;/a&gt;.&lt;p&gt;CISC nebo RISC jako cen­t­rální prin­cip, který plně de­fi­nuje pro­ce­sor, už
+ne­e­xis­tuje. Záleží na kon­krét­ních de­tai­lech ISA a jejich im­ple­men­tace v kře­míku. Svět není čer­no­bílý a dané ar­chi­tek­to­nické po­stupy jsou na­sa­zo­vány v si­tu­a­cích, kdy to dává nej­větší smysl – efek­ti­vita, ve­li­kost pro­ce­soru,
+rych­lost, takty, IPC. CISC a RISC před­sta­vují zou­fale ne­kom­pletní ka­te­go­ri­zaci,
+která se vrací k pra­sta­rým ide­á­lům, jež dnes &lt;a href=https://www.extremetech.com/computing/323245-risc-vs-cisc-why-its-the-wrong-lens-to-compare-modern-x86-arm-cpus&gt;nic ne­zna­me­nají&lt;/a&gt;; mnoho ne­ří­kají
+o daných ar­chi­tek­tu­rách a jejich mik­ro­ar­chi­tek­to­nické im­ple­men­taci.&lt;p&gt;Teď je doufám nade všechny po­chyb­nosti jasné, co &lt;i&gt;přesně&lt;/i&gt; jsem měl na mysli.&lt;p&gt;Ale pokud někdo o pár dekád za­o­stal ve zna­los­tech o tomhle tématu a/nebo
+otáz­kách lidské &lt;a href="https://k47.cz/2021/sex.html?utm_medium=feed"&gt;se­xu­a­lity&lt;/a&gt; a iden­tity, mohl by nabýt fa­leš­ného
+dojmu, že jsem hrozný člověk. To nikdy nesmím do­pus­tit.&lt;/p&gt;</description><comments>https://k47.cz/comments.php?u=2021/vtip</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/vtip&amp;rss</wfw:commentRss></item>
+<item><title>Poslední hektické dny vosí kolonie</title><guid isPermaLink="true">https://k47.cz/2021/vosy.html?utm_medium=feed</guid><pubDate>Wed, 13 Oct 2021 00:30:00 +0200</pubDate><description>&lt;p&gt;Smrt si jde pro nás pro všechny. Nic moc, ale stále lepší než al­ter­na­tivy: pro
+vosy a včely při­chází každou zimu. Ale ony si nejsou vědomi svého osudu a to je
+na celé věci tak krásné nebo tra­gické, záleží na úhlu po­hledu a tom, jestli
+pa­t­říte mezi &lt;i&gt;skle­nice zpola plná&lt;/i&gt; nebo &lt;i&gt;zpola prázdná&lt;/i&gt; sortu lidí. Spo­le­čen­ský
+hmyz jen dělá to, pro co se na­ro­dil, jedna po­stra­da­telná sou­část su­per­or­ga­nismu,
+jejich úděl je práce pro pře­žití ko­lek­tivu s tím, že ně­ko­lik spe­ci­álně
+stvo­ře­ných je­dinců přečká zimu a začne celý ten tristní ko­lo­toč nanovo. Tolik
+života vznikne a je sme­teno jen proto, aby pře­žila hrstka krá­lo­ven.&lt;p&gt;Včely mají svůj život přesně &lt;a href=https://cs.wikipedia.org/wiki/V%C4%8Dela_medonosn%C3%A1#V%C3%BDvoj_d%C4%9Blnice&gt;roz­par­ce­lo­vaný podle dnů&lt;/a&gt;. Tři hodiny po
+na­ro­zení včela čistí, 4. den začíná krmit larvy, 6. den kojí mateří ka­šič­kou,
+12. den staví, potom stráží a na­ko­nec se z ní stane pen­dler; tak dlouho jak je
+třeba, smyl pr­cha­vých dnů na­lin­ko­vaný oka­mži­kem na­ro­zení (mmch: &lt;a href=https://cs.wikipedia.org/wiki/Soubor:Drohnenpuppen_79d.jpg&gt;tohle&lt;/a&gt;
+mi při­po­míná &lt;a href=https://en.wikipedia.org/wiki/File:Birth_Machine.jpg&gt;tohle&lt;/a&gt; od H.R. Gigera). Pří­roda nahání strach a údiv svým
+&lt;a href="https://k47.cz/2021/mitochondrie.html?utm_medium=feed"&gt;slepým uti­li­ta­ri­a­nis­mem&lt;/a&gt;.&lt;/p&gt;&lt;figure class=half&gt;&lt;a href=https://k47.cz/obrazky/albums/makro/2021-p1.jpg class=noskip style=padding-bottom:66.75%&gt;&lt;img src=https://k47.cz/t/kcoam-2021-p1-105db810-400.jpg&gt;&lt;/a&gt;&lt;/figure&gt; &lt;figure class=half&gt;&lt;a href=https://k47.cz/obrazky/albums/makro/2021-p2.jpg class=noskip style=padding-bottom:66.75%&gt;&lt;img src=https://k47.cz/t/kcoam-2021-p2-106bcf91-400.jpg&gt;&lt;/a&gt;&lt;/figure&gt; &lt;p&gt;O nic z toho bych se ne­za­jí­mal, kdy­bych na bal­koně neměl vosí hnízdo za­vr­tané kamsi
+do hlubin trámů stře­chy nad Celou a kdyby se na as­fal­to­vém po­vrchu jed­noho dne
+ne­za­čaly ob­je­vo­vat mrtvé larvy. Sle­do­val jsem, jak je vosy vy­ná­šejí ven:
+děl­nice vláčí larvu stejné ve­li­kosti jako ona sama, pla­hočí se metr, dva, tři
+a pak larvu nechá na pospas živlům a času. Vy­pu­zené larvy roz­hodně
+ne­vy­pa­dají, že by se stále pa­t­řily mezi živé or­ga­nismy; mrtvá
+hmota, Snow­de­novo ta­jem­ství.&lt;p&gt;Díval jsem se, co by mohlo způ­so­bo­vat tohle cho­vání &amp; od­po­vědí se mi ne­do­stalo,
+in­ter­net ve své ne­změr­nosti mlčel. Přesto, frag­menty en­to­mo­lo­gie vedou k jediné
+od­po­vědi: blíží se smrt. Do­spělí je­dinci se živí nek­ta­rem, larvy pre­fe­rují
+hmyz, jsou však zcela ne­po­hyb­livé, uza­vřené v šesti­hranné in­ku­bační ko­můrce,
+zcela zá­vislé na pří­sunu po­travy (mouchy a po­dobní lé­tavci) od dělnic. Ochla­zuje
+se, much ubývá, není strava, ener­gie musí smě­řo­vat k těm pár je­din­cům, co
+pře­žijí zimu a ně­které zbytné larvy uhynou. Jejich těla musí pryč, aby ne­hnily
+ve hnízdě.&lt;p&gt;V té době, pár dnů na­zpá­tek, po­slední kve­toucí rost­liny byly zcela ob­sa­zené
+vše­mož­nými lé­tavci, včely, vosy, sršně, mouchy, ka­ko­fo­nie tem­ného hučení,
+hyp­no­tické a ul­ti­mátně velice smutné. Žádný jiný zdroj po­travy ne­zbývá, jen
+tohle a pak kaž­do­roční ani­hi­lace. Ko­loběh života je hek­tický a prostý
+vzne­še­nosti. (Pro extra efekt od­sta­vec pře­čtěte hlasem &lt;a href="https://k47.cz/2018/werner-herzog.html?utm_medium=feed"&gt;Wer­nera Her­zoga&lt;/a&gt;.)&lt;p&gt;Je to jako roz­dě­lení mezi so­ma­tické a po­hlavní buňky. Celé naše tělo s tou
+ne­ko­nečně fas­ci­nu­jící kom­ple­xi­tou není víc než pod­půrný me­cha­nis­mus do­časně
+vy­bo­do­vaný pro pro­dukci hrstky po­hlav­ních buněk. Tragé­die toho všeho spo­čívá v pros­tém faktu, že naše vědomí a iden­tita a strach se na­chází na straně
+so­ma­tic­kých buněk, toho do­čas­ného stroje pro nějž pří­roda měla jiné záměry, než
+bychom pre­fe­ro­vali.&lt;/p&gt;&lt;figure class=main&gt;&lt;a href=https://k47.cz/obrazky/albums/makro/2021-p3.jpg class=noskip style=padding-bottom:66.63%&gt;&lt;img loading=lazy src=https://k47.cz/t/kcoam-2021-p3-1079e712-800.jpg&gt;&lt;/a&gt;&lt;figcaption&gt;Mezi mrt­vými larvami se zpo­ma­lené včely po­hy­bo­valy s ele­gancí těž­kého otřesu mozku.&lt;/figcaption&gt;&lt;/figure&gt; &lt;hr&gt;
+&lt;p&gt;+1: O dva dny poz­ději, když jsem ráno vylezl ven, z hnízda zrovna vy­lé­tá­valy
+gi­gan­tické krá­lovny.&lt;/p&gt;</description><category>foto</category><category>makro</category><category>hmyz</category><category>smrt</category><comments>https://k47.cz/comments.php?u=2021/vosy</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/vosy&amp;rss</wfw:commentRss></item>
+<item><title>Twitch prachy</title><guid isPermaLink="true">https://k47.cz/2021/twitch.html?utm_medium=feed</guid><pubDate>Fri, 8 Oct 2021 00:40:00 +0200</pubDate><description>&lt;p&gt;&lt;a href=https://sizeof.cat/post/twitch-leaks/&gt;Twitch měl be­bíčko&lt;/a&gt;. Ano­nymní gentle­man se na 4chanu zmínil, že se jeho lidem
+po­da­řil skutek, kte­rému se v hac­ker­ských kru­zích říká &lt;i&gt;total pwnage&lt;/i&gt;. Pro­lo­mili
+se do vnitř­ních ka­ta­komb ama­zonu a vy­nesli vše, co nebylo při­bité. Jako důkaz
+svých skutků po­skytli 128 GB torrent s úlov­kem: kom­pletní zdro­jáky všech
+in­ter­nách pro­jektů ode dne nula, při­dru­žené služby a weby, nikdy ne­vy­dané
+pro­jekty, všechno. A taky data o žol­dech &lt;i&gt;stre­a­merů&lt;/i&gt; od srpna 2019 do října 2021.&lt;p&gt;Nikdy jsem moc ne­chá­pal €€€ dy­na­miku twitche, všechny ty pe­něžní dary,
+sub­skripce za 5 dolarů, za které si člověk koupil vděk a schop­nost po­u­ží­vat
+ně­ko­lik spe­ci­fic­kých ob­rázků v chatu. Na jednu stranu ro­zu­mím, že jde o něco
+jako záštitu, kdy člověk spon­zo­ruje někoho sym­pa­tic­kého, aby ne­strá­dal, ale na
+druhou stranu se nemůžu zbavit pocitu, že nejde o víc než ga­mi­fi­ko­vané &lt;a href="https://k47.cz/2020/parasoc.html?utm_medium=feed"&gt;pa­ra­so­ci­ální vztahy
+s ve­sta­vě­nými mi­k­ro­plat­bami&lt;/a&gt;. Určitý smysl to může dávat v pan­de­mic­kých
+letech, možná, ale i tak roli &lt;i&gt;stre­a­mera&lt;/i&gt; by v nor­mální si­tu­aci za­stou­pil reálný živý
+přítel, který by im­pli­citně ne­vy­ža­do­val ne­u­stálý proud malých fi­nanč­ních
+trans­akcí, z nichž si po­bočka jedné z nej­vět­ších kor­po­rací světa vezme svůj podíl.
+Sám tam nemám účet. Když už, dívám se přes stre­amlink a vlc,
+nebo stáhnu VOD via you­tube-dl. Ale to teď není dů­le­žité.&lt;p&gt;Zpátky k úniku dat. Ně­které z oněch dat se mohly, ale ne­mu­sely, dostat do mých
+rukou a mohl nebo ne­mu­sel jsem se na ně po­dí­vat a vy­pro­du­ko­vat ná­sle­du­jící
+shr­nutí.&lt;/p&gt;&lt;pre&gt; 168.55 M$ - ad_share_gross
+ 997.28 M$ - sub_share_gross
+ 339.51 M$ - bits_share_gross
+   3.98 M$ - bits_developer_share_gross
+  15.87 M$ - bits_extension_share_gross
+ 271.85 M$ - prime_sub_share_gross
+   1.59 M$ - bit_share_ad_gross
+   0.00 M$ - fuel_rev_gross
+   5.47 M$ - bb_rev_gross
+   0.03 M$ - experimental_rev_gross
+&lt;/pre&gt;&lt;p&gt;Tahle ta­bulka udává kolik firma vy­pla­tila svým &lt;i&gt;stre­a­me­rům&lt;/i&gt; za po­slední dva a čtvrt roku podle mo­ne­ti­zač­ního me­cha­nismu. Nej­více €€€ pro­teče přes sub­skripce
+(firma si vezme ~půlku), bity (dary, twitch si vezme svoji daň), &lt;i&gt;prime&lt;/i&gt;
+sub­skripce a re­klamy. Zbytek se po­hy­buje na hra­nici šumu. Za dva a něco roku to
+dělá 1.8 mi­li­ardy dolarů, 40 mi­li­ard korun.&lt;/p&gt;&lt;figure class=main&gt;&lt;a href=https://k47.cz/obrazky/twitch-by-month.png class=noskip style=padding-bottom:57.25%&gt;&lt;img src=https://k47.cz/t/kco-twitch-by-month-df4f40d-800.png&gt;&lt;/a&gt;&lt;/figure&gt; &lt;p&gt;Tady to máte podle měsíce, obrat, jak je vidět, v pan­de­mic­kých letech roste,
+stále víc se pro­točí na sub­skrip­cích.&lt;p&gt;A ještě tohle:&lt;/p&gt;&lt;pre&gt; 50%   6713
+ 20%    440
+ 10%     99
+&lt;/pre&gt;&lt;p&gt;Malá sta­tis­tika kolik pro­cent žoldu při­padne kolika lidem. Top 99 &lt;i&gt;stre­a­merů&lt;/i&gt; sežere
+10% všech peněz, top 440 lidem při­pluje 20% veš­ke­rých $$$ a 6713
+je­dinců si ro­ze­bere po­lo­vinu oněch skoro 2 mi­li­ard dolarů. Druhá půlka je pro
+plebs.&lt;/p&gt;&lt;figure class=main&gt;&lt;a href=https://k47.cz/obrazky/twitch-loglog.png class=noskip style=padding-bottom:46.00%&gt;&lt;img loading=lazy src=https://k47.cz/t/kco-twitch-loglog-d0b01f03-800.png&gt;&lt;/a&gt;&lt;/figure&gt; &lt;p&gt;&lt;br&gt;&lt;p&gt;Na log-log grafu to vypadá pěkně zi­p­fov­sky. Ne­poč­tená sme­tánka nahoře, chátra o síle stovek tisíc se plazí v bahně a sbírá de­set­níky.&lt;/p&gt;</description><category>internet</category><comments>https://k47.cz/comments.php?u=2021/twitch</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/twitch&amp;rss</wfw:commentRss></item>
+<item><title>Stres a teror u VCMI</title><guid isPermaLink="true">https://k47.cz/2021/vcmi-2.html?utm_medium=feed</guid><pubDate>Wed, 6 Oct 2021 01:10:00 +0200</pubDate><description>&lt;p&gt;Dlouho jsme se ne­vi­děli. Má to svoje důvody, ně­které, do nichž nebudu za­bí­hat,
+jiné více pro­za­ické, jme­no­vitě &lt;a href="https://k47.cz/2021/vcmi.html?utm_medium=feed"&gt;VCMI&lt;/a&gt;. Tenhle free soft­ware klon pra­staré
+ta­hovky &lt;i&gt;He­re­oes of Might and Magic 3&lt;/i&gt;, mi zase sedí na mozko­vém kmeni jako zlý
+návyk. Říkám si, dneska něco napíšu, ale až &lt;i&gt;potom&lt;/i&gt;, teď dám na chvíli VCMI.
+Pak ale strá­vím osm hodin v ka­ta­to­nic­kém tranzu, ve stavu ne­u­stálé stresu,
+po­krytý vrst­vou stu­de­ného potu, s po­ci­tem pro­va­zo­chodce, který se ne­u­stále
+na­chází mi­li­metr od ter­mi­nál­ního pádu. &lt;a href="https://k47.cz/2021/vcmi.html?utm_medium=feed"&gt;Nová AI&lt;/a&gt; ne­přá­tel je prostě příliš
+dobrá a s me­cha­nic­kou přes­ností trestá každý omyl. Nemůžu dát nor­mální
+ob­tíž­nost a pro­hnat se ma­gic­kou zemí jako jezdec apo­ka­ly­psy, ne, musím ne­u­stále
+plá­no­vat, před­ví­dat, tak­ti­zo­vat a modlit se k dávno za­po­me­nu­tým bohům, jen
+abych měl šanci přežít.&lt;p&gt;Jednu mapu jsem musel začít tři­krát – poprvé jsem udělal špatné roz­hod­nutí,
+které za­z­dilo další pro­gres, nemohl po­sta­vit budovy pro ver­bo­vání armády, po­čí­ta­čoví hráči
+mě před­běhli a už jsem je nikdy nemohl do­stih­nout. S velkou ná­ma­hou jsem
+po­ra­zil jednu úto­čící armádu, aby se na obzoru ob­je­vila další. Pro­tiv­ník s více
+městy a sil­nější eko­no­mi­kou může na­ver­bo­vat čer­stvé vojsko každé pon­dělí a poslat je mým směrem, aby mě po­stupně vy­kr­vá­cel. Druhý pokus jsem si dal pozor,
+ale byl jsem málo agre­sivní, jeden pro­tiv­ník me­zi­tím stihl po­ra­zit jiného,
+získal jeho zdroje, do­pl­nil armády zde­ci­mo­vané vojem a zas se opa­ko­vala spi­rála po­ma­lého ztrá­cení tempa a sláb­nutí. Na­po­třetí jsem jel jako stroj – armáda, zlato, zá­kladní su­ro­viny,
+budovy, hrad, sil­nější armáda a koncem prv­ního měsíce se už tlačit na ne­pří­tele
+a dra­ma­ticky ex­pan­do­vat. Jinak to nešlo. A to někdy za­čí­nám hrát s myš­len­kou, že
+u VCMI budu re­la­xo­vat. Skoro nikdy tomu tak není.&lt;p&gt;Tlačím na pro­tiv­níka X, s ar­má­dou vyjedu z města, po­čí­tač oka­mžitě pozná, že
+jsem nechal ne­chrá­něné město a pro­tiv­ník Y bez čekání za­ú­točí do zad, musím se
+vrátit s hlavní ar­má­dou, ne­pří­tel X toho vy­u­žije, aby zpátky ob­sa­dil ztra­cené
+pozice. To je na sou­časné po­dobně VCMI tak stre­su­jící nebo při­taž­livé: musím
+ne­u­stále ba­lan­co­vat mezi nutnou ex­panzí a obra­nou vlast­ních měst. Ne­přá­telé
+mají jed­noho hlav­ního hrdinu s útoč­nou ar­má­dou a ostatní tvoří řetěz, kterým mu
+při­vádí čer­s­tvě na­ver­bo­vané posily. Téhle for­maci můžu kon­tro­vat také jen
+hr­di­nou s vět­ši­nou vojska. Cesta do boje, ale ne­od­vratně ne­chává od­krytá záda.
+Ces­to­vání je pomalé a pře­pa­dení do zad může být smr­tící. Není možné se
+za­ba­ri­ká­do­vat a bu­do­vat a bu­do­vat; agre­siv­nější sou­sedi se na­vzá­jem vy­stří­lejí
+a po­slední pře­ži­vší se stane příliš mocným.&lt;p&gt;Ale když vy­tr­vám, někdy mezi jednou a čtyřmi ho­di­nami úz­kosti se to zlomí;
+hr­di­nové na úrovni 15 – 25, armády plně vy­tré­no­vané, mám víc měst, větší příjmy
+a můžu začít vál­co­vat zbytek světa. Teprve v tom oka­mžiku se můžu uklid­nit,
+každou chvílí už ne­hrozí oka­mžitý a ne­před­ví­da­telný zánik.&lt;p&gt;Tedy aspoň pokud se na obzoru ne­ob­jeví hrdina s an­děl­skými křídly, pře­letí lesy
+a pohoří a svou ob­rov­skou mo­bi­li­tou začne te­ro­ri­zo­vat a ob­sa­zo­vat špatně brá­něná
+města, aniž bych měl mož­nost ho dohnat a za­sta­vit. To se ale stává &lt;i&gt;jen&lt;/i&gt; někdy.&lt;/p&gt;</description><category>vcmi</category><comments>https://k47.cz/comments.php?u=2021/vcmi-2</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/vcmi-2&amp;rss</wfw:commentRss></item>
+<item><title>Snažili se ti pomoct, tys jim nadával do lhářů a teď jsi mrtvej</title><guid isPermaLink="true">https://k47.cz/2021/covid-obeti.html?utm_medium=feed</guid><pubDate>Tue, 28 Sep 2021 22:10:00 +0200</pubDate><description>&lt;ul&gt;&lt;li&gt;Dick Farrel, kon­zer­va­tivní hla­sa­tel v rádiu, anti-vaxer, ne­ne­chal se na­oč­ko­vat,
+na­ka­zil se co­vi­dem a zemřel.
+&lt;li&gt;Phil Va­len­tine, kon­zer­va­tivní ra­di­ový hla­sa­tel, daňový pro­tes­tér, po­pí­rač
+glo­bál­ního otep­lo­vání, od­půrce roušek a oč­ko­vání, na­ka­zil se co­vi­dem a zemřel.
+&lt;li&gt;Ron Wright, re­pub­li­kán­ský kon­gre­sman, dlou­ho­letý po­pí­rač covidu, na­ka­zil se
+co­vi­dem a zemřel
+&lt;li&gt;Luke Letlow, čer­s­tvě zvo­lený do kon­gresu za re­pub­li­kány, často viděn během
+kam­paně bez re­spi­rá­toru nebo so­ci­ál­ního distan­co­vání, na­ka­zil se co­vi­dem a zemřel.
+&lt;li&gt;Landon Sprad­lin, ka­za­tel, ozna­čo­val covid za anti-trum­pov­skou ma­so­vou
+hys­te­rii, na­ka­zil se co­vi­dem a zemřel, 41 let.
+&lt;li&gt;Herman Cain, dva­krát po­mýš­lel na pozici pre­zi­denta USA, byl proti loc­kdow­nům,
+po­va­žo­val vak­cíny za sporné, po­chy­bo­val o roz­sahu pan­de­mie, byl proti
+po­vin­ným rouškám, pod­po­ro­val hyd­ro­xychlo­roqin, na Trum­pov­ském shro­máž­dění byl
+vy­fo­to­gra­fo­ván bez masky, dva týdny nato hospi­ta­li­zo­ván s co­vi­dem a zemřel.
+&lt;li&gt;Caleb Wallace, muž, který silně pomohl gal­va­ni­zo­vat proti-rouš­kové hnutí v Texasu, na­ka­zil se co­vi­dem a zemřel, 30 let.
+&lt;li&gt;Marc Ber­nier, kon­zer­va­tivní ra­di­ový hla­sa­tel, tvrdil, že se nikdy ne­ne­chá
+oč­ko­vat, na­ka­zil se co­vi­dem a zemřel
+&lt;li&gt;Bob Enyart, anti-vaxer, ex­tre­mis­tický křes­ťan­ský fun­da­men­ta­lista s ty­picky
+fun­da­men­ta­lis­tic­kými názory na ho­mose­xu­a­litu, po­traty, evo­luci a vědu obecně,
+opo­no­val vak­ci­naci proti covidu a na­ří­ze­nému nošení re­spi­rá­torů, na­ka­zil se
+co­vi­dem a zemřel.
+&lt;/ul&gt;&lt;p&gt;Exis­tují dvě ka­te­go­rie tmářů: šar­la­táni a po­ma­tenci. Jedni pro­dá­vají lež a jsou
+si toho dobře vědomi, druzí dělají to samé, jen to neví. V an­g­lič­tině se pro
+druhou sortu po­u­žívá slovo &lt;a href=https://en.wikipedia.org/wiki/Crank_(person)&gt;&lt;i&gt;cranks&lt;/i&gt;&lt;/a&gt;, česky kliky, proto jim od tohoto
+oka­mžiku budu říkat &lt;i&gt;za­rezlé kliky&lt;/i&gt;, jako že se nedají otočit silou ani
+ro­zum­ným ar­gu­men­tem. Kliky sou­sedí s fa­na­tiky, ale nejde o jedny a ty samé
+lidi, fa­na­tici tvoří širší ka­te­go­rii, která může ale nemusí za­chá­zet do
+ne­ro­zum­ných ex­trémů. Fa­na­tik nemusí nutně věřit úplným ne­smys­lům, jen je do
+něčeho po­no­řen víc než je běžné nebo zdravé pro oby­čej­ného smr­tel­níka. Fa­na­tik
+do jógy může agre­sivně pro­pa­go­vat jógu pro všechny její pří­nosy, me­di­tační
+kva­lity uklidní mysl, ty fy­zické pro­táh­nou tělo a tak po­dobně, není na tom
+nic oči­vidně ne­prav­divé. Na­proti tomu za­rezlá klika může tvrdit, že jóga léčí
+ra­ko­vinu. Nejde o rozdíl v kva­litě, jen kvan­titě; jak daleko za­chá­zejí.&lt;p&gt;Šar­la­táni to vše dělají pro peníze nebo &lt;a href="https://k47.cz/2020/smucler.html?utm_medium=feed"&gt;slávu&lt;/a&gt;, sami nevěří slovům, která
+kážou a dobře chápou, čeho se do­pouš­tějí; vědí, že jejich ak­ti­vita je
+de­struk­tivní, že to někdo odnese zdra­vím nebo ži­vo­tem, ale jsou to šar­la­táni a ná­sledky na ostatní v kal­ku­laci ne­hrají velkou roli. Stejně jako mo­rální
+in­te­grita. Ti, kdo vědomě pro­dá­vají lži a pro €€€ tráví studnu po­chyb­nostmi o vak­ci­naci, se ne­chají oč­ko­vat při první pří­le­ži­tosti. Když člověk lže pro
+prachy, prin­cipy ne­e­xis­tují. Buď je to vůbec ne­za­jímá, nebo věří, že všechny
+jejich ne­kon­zis­tence a po­kry­tec­tví jsou plně opod­stat­něné. Fa­na­ticky věřící se
+do­pustí vě­do­mého pod­vodu, aby ob­há­jili své fa­na­tické pře­svěd­čení&lt;a href=#fn1&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; .&lt;p&gt;Na druhou stranu na kliky se můžeme dívat jako na oběti de­ma­go­gie. Není to
+snadné, pravda, duo Dun­ning a Kruger k tomu mají co říct, ale aspoň na ně­které
+z nich tak můžeme po­hlí­žet. Za­padli do bahna al­ter­na­tiv­ních faktů, uta­jo­va­ných
+vě­do­mostí a kon­spi­rač­ních teorií, s šar­la­tány a pod­vod­níky šedé in­te­lek­tu­ální
+sféry u kor­mi­dla. První krok je ten roz­ho­du­jící; když člověk uvěří jedné
+ma­in­stre­amu a re­a­litě od­po­ru­jící fámě, je snadné uvěřit všem. Pokud spolkli
+první sousto návnady, že stát, elity, nad­ná­rodní or­ga­ni­zace nebo stí­nové figury
+ta­ha­jící za nitky jsou u moci, jejich jed­nání nekalé, pro­lhané, ne­bez­pečné a in­tri­kář­ské a jsou po dob­rých lidech, jako jsou oni sami, snáze se zapojí do
+pro­gramu sys­te­ma­tic­kého po­pí­rání faktů, vě­dec­kých po­znatků a re­a­lity jako
+takové. Teď čtu velice re­le­vantní knihu &lt;a href="https://libgen.fun/search.php?req=post-truth++mcintyre&amp;column=def&amp;view=simple&amp;phrase=0&amp;open=0&amp;res=25"&gt;&lt;i&gt;Post-truth&lt;/i&gt;&lt;/a&gt; od Lee McIn­ty­rea.
+Autor sle­duje vznik a fun­go­vání me­di­ální &amp; soc-net ma­ši­né­rie, kde vše je pouze
+vý­ra­zem po­li­tic­kého pře­svěd­čení, pravda nic ne­zna­mená a i sama re­a­lita jako
+taková ne­hraje žádnou roli. &lt;i&gt;Indeed, if news is just po­li­ti­cal ex­pres­sion, why
+not make it up?&lt;/i&gt; V pod­houbí tohoto fun­go­vání se snadno sklouzne k fikci, kde
+již exis­tu­jící pře­svěd­čení a emoce určují, v co člověk věří a co po­va­žuje za
+sku­teč­nost.&lt;p&gt;V ko­gni­tiv­ních vědách se pro tento fe­no­mén po­u­žívá pojem &lt;a href=https://en.wikipedia.org/wiki/Motivated_reasoning&gt;&lt;i&gt;mo­ti­va­ted
+re­a­so­ning&lt;/i&gt;&lt;/a&gt; – co působí dobře, vní­máme jako prav­divé – sil­nější emoční
+in­ves­tice, sil­nější zkres­lení. Nemáme nad sebou &lt;a href="https://k47.cz/2021/kontrola.html?utm_medium=feed"&gt;velkou vládu&lt;/a&gt;, můžeme si
+myslet, že jed­náme zcela ra­ci­o­nálně a lo­gicky, a mnoho klik si to sku­tečně
+myslí, ale místo toho nás ovládá armáda psy­cho­lo­gic­kých pastí. To je jeden z mých nej­vět­ších stra­chů: jak si můžu být jistý, že moje zna­losti jsou prav­divé
+a úsudky opráv­něné? Epis­te­mo­lo­gický skep­ti­cis­mus říká, že z prin­cipu nikdy
+ne­mů­žeme získat 100% ko­rektní zna­losti, říkal to De­s­car­tes, říkal to Hume,
+říkali to mnozí další. Nechci za­chá­zet tak daleko a po­chy­bo­vat o va­li­ditě
+vlast­ních smyslů, stačí jen slabší verze: jak si můžu být jistý, že vše, co
+jsem četl a co použil jako surový ma­te­riál pro kon­strukci svého svě­to­ná­zoru je
+prav­divé, od­po­ví­da­jící re­a­litě, kon­zis­tentní? Jestli si to vůbec &lt;a href="https://k47.cz/2020/kolektivni-lez.html?utm_medium=feed"&gt;pa­ma­tuji správně&lt;/a&gt;? Jak velkou roli v syn­téze hrají
+emoce, mo­ti­vo­vané uva­žo­vání a další zkres­lení? Nevím a z prin­cipu to ani nemůžu
+vědět a to mě děsí. Když čtu o kon­spi­rač­ních te­o­re­ti­cích a dal­ších po­ma­ten­cích,
+někdy se za­sta­vím a pře­mýš­lím, jak si můžu být jistý, že jsem ne­spadl do
+po­dobné pasti, jiné té­ma­tem, ale pří­buzné duchem? Nemůžu. Ne­no­sím v hlavě
+kon­zis­tentní systém hodnot a po­stojů vy­bu­do­vaný ře­těz­cem de­ri­vací z prv­ních
+prin­cipů, které bych mohl nějak ověřit. Všechno je to ad-hoc změť, po­sklá­daná
+za chodu a po­spo­jo­vaná z díl­čích střípků in­for­mací, které do sebe někdy
+za­pa­dají a jindy jsou diso­nantní.&lt;p&gt;A to je důvod, proč se na oběti šar­la­tán­ské de­ma­go­gie můžeme dívat jako na
+oběti. Sle­do­vali nit du­še­ních po­chodů, ob­klo­peni pod­vod­níky, kteří věděli jak
+využít ko­gni­tivní zkres­lení a psy­cho­lo­gické pasti, bi­zarně stra­nic­kými médii,
+ra­di­ka­li­zu­jí­cími žol­dáky kul­tur­ních válek a na konci pak ve­řejně pro­hla­šují, že
+covid je jen pa­kárna, že oč­ko­vání zabíjí a nemoc vyléčí jedině ve­te­ri­nární
+an­ti­pa­ra­zi­ti­kum, aby na něj pár týdnů nato bez ce­re­mo­nií ze­mřeli.&lt;p&gt;In­ter­ne­tem před lety pro­bles­ko­val pojem &lt;i&gt;sto­chas­tický te­ro­ris­mus&lt;/i&gt; – po­stupný
+proces ne­přímé ra­di­ka­li­zace, kdy žádný krok pří­jemce přímo ne­pře­svědčí, aby
+za­bí­jel lidi, ale každý článek řetězu, i ty zdán­livě ne­vinné a ba­nální, k tomu
+trochu při­spí­vají. Každý krok po­si­luje ten ná­sle­du­jící. Po­dobně se můžeme dívat
+na pád do díry surre­ál­ných názorů a kon­spiro-teorií. V pro­středí, které ak­tivně
+zasévá ne­dů­věru, ob­klo­pen stejně na­lo­me­nými lidmi, člověk po­stupně po­si­luje své
+exis­tu­jící pře­svěd­čení a jde dál po tra­jek­to­rii mimo re­a­litu. Nikdy se to přece
+nemůže stát &lt;i&gt;mě&lt;/i&gt;. A pak je mrtvý.&lt;p&gt;&lt;a href=https://rationalwiki.org/wiki/Laura_Loomer&gt;Laura Loomer&lt;/a&gt; – alt-right &amp; anti-vax klika, ne­ú­spěšná re­pub­li­kán­ská
+kan­di­dátka do kon­gresu USA a cel­kově pří­šerná osoba – &lt;a href=https://web.archive.org/web/20210917161107/https://www.orlandosentinel.com/politics/os-ne-laura-loomer-covid-20210917-756h4dttgvfedbe27et32cl3xy-story.html&gt;si přála dostat
+covid&lt;/a&gt;, aby to všem na­třela a uká­zala, že jde jen o vy­haj­po­vaný virus a otrava jídlem s sebou nese větší ne­bez­pečí; pak ale &lt;a href="https://k47.cz/tag/koronavirus.html?utm_medium=feed"&gt;covid&lt;/a&gt; sku­tečně do­stala a po­znala na vlastní kůži jak strašná to může být nemoc i když ona sama není v ri­zi­kové
+sku­pině a přímo na ni ne­u­mírá. „&lt;i&gt;Just pray for me please. Can’t even begin to
+ex­plain how brutal the body aches and nausea that come with COVID are. I am in
+so much pain.&lt;/i&gt;“ Sa­mo­zřejme, že covid po­va­žo­vala za pa­kárnu, za­pa­dalo to do
+všeho, v co už věřila, velký obraz v její hlavě, vy­tvo­řený po­stupně a pro
+krůč­cích snadno ab­sor­bo­val názor na covid, který za­pa­dal do její po­li­tiky.&lt;p&gt;Na­ko­nec sama po­znala, že ofi­ci­ál­ním plánem bylo přesně &lt;a href="https://k47.cz/2020/hv.html?utm_medium=feed"&gt;to, co v něm
+stálo&lt;/a&gt;, žádné nekalé ma­ni­pu­lace, žádné ma­chia­vel­ské plány, jen upřímná
+snaha pomoct a za­chrá­nit životy. Oč­ko­vání je bez­pečné a je tu pro naše zdraví.
+Lidé museli dlouho padat dírou sto­chas­tic­kého ší­len­ství, aby sami sebe
+pře­svěd­čili, že je to přesně naopak.&lt;hr&gt;
+&lt;p&gt;+1: Pro or­ga­ni­zo­va­nou scha­den­freude nad osudem příliš se­be­vě­do­mých od­mí­tačů je
+tu &lt;a href=https://old.reddit.com/r/COVIDAteMyFace/&gt;celý jeden sub-reddit&lt;/a&gt;.&lt;p&gt;+2: Z wiki hesla &lt;a href=https://en.wikipedia.org/wiki/Crank_(person)&gt;&lt;i&gt;crank&lt;/i&gt;&lt;/a&gt;:&lt;blockquote&gt;&lt;p&gt;Pa­ral­le­ling pre­vi­ous work, we find that en­dor­se­ment of a lais­sez-faire
+con­cep­tion of free-market eco­no­mics pre­dicts re­jection of cli­mate
+science […]. En­dor­se­ment of the free market also pre­dic­ted the re­jection of
+other es­tab­lished scien­ti­fic fin­dings, such as the facts that HIV causes AIDS
+and that smoking causes lung cancer.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Li­ber­ta­ri­áni po­pí­rají kli­ma­tic­kou ka­ta­strofu? Nejsem pře­kva­pen. &lt;a href=https://www.irozhlas.cz/zpravy-domov/10-vyzev-pro-pristi-ceskou-vladu-ekologie-sucho-klimaticka-zmena_2109170615_tzr#m8&gt;Říkají to sami
+jejich kan­di­dáti.&lt;/a&gt;&lt;p&gt;+3: &lt;a href=https://freethoughtblogs.com/pharyngula/2021/10/16/i-am-so-sorry-youre-dead/&gt;A taky tenhle&lt;/a&gt;.&lt;hr&gt;
+&lt;ol&gt;&lt;li id=fn1&gt;Tohle je z pod­castu &lt;a href=https://idontspeakgerman.libsyn.com/&gt;I Don't Speak German&lt;/a&gt;, který sle­duje fa­šisty,
+nácky a jejich ak­ti­vity. Pří­kla­dem z his­to­rie je ka­pi­tola &lt;i&gt;The Birth of Team B&lt;/i&gt;
+z knihy &lt;i&gt;Mer­chants of doubt&lt;/i&gt;.
+&lt;/ol&gt;</description><category>koronavirus</category><category>konspirace</category><category>výběr</category><comments>https://k47.cz/comments.php?u=2021/covid-obeti</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/covid-obeti&amp;rss</wfw:commentRss></item>
+<item><title>Lidské dynamo</title><guid isPermaLink="true">https://k47.cz/2021/dynamo.html?utm_medium=feed</guid><pubDate>Fri, 24 Sep 2021 02:00:00 +0200</pubDate><description>&lt;p&gt;Zas jsem na kole vy­ra­zil na &lt;a href="https://k47.cz/2019/watt.html?utm_medium=feed"&gt;tes­to­vací svah&lt;/a&gt;, abych změřil výkon nohou, a povím vám, není to nic moc. Za ne­přes­ných pod­mí­nek jsem na­mě­řil lehce pod 300
+wattů me­cha­nic­kého výkonu, nic moc, dva roky na­zpá­tek to bylo 380 wattů. Na
+druhou stranu pro­tože vážím pod­statně méně než tehdy, čas vý­stupu byl prak­ticky
+iden­tický.&lt;p&gt;Podle &lt;a href=https://www.cyclinganalytics.com/blog/2018/06/how-does-your-cycling-power-output-compare&gt;těhle ta­bu­lek&lt;/a&gt; můj výkon pevně zapadá do dol­ních 5% cyk­listů, možná
+10%, pokud neberu cel­ko­vou wattáž, ale watt na ki­lo­gram, aspoň těch cyk­listů,
+kteří se se svými výkony chtějí po­dě­lit a sebe-výběr může data zkres­lo­vat
+po­ně­kud nahoru.&lt;p&gt;Pro­to­kol měření měl ne­do­statky v přes­nosti. Jednak sto­puju čas stou­pání s tím,
+že to je do­sta­tečně prudké, aby se daly ostatní vlivy za­nedbat; všechno tření a odpor vzdu­chu hraje, aspoň doufám, menší roli než práce proti gra­vi­taci. Z toho
+důvodu těch 300 wattů pod­hod­no­cuje sku­teč­nost. O kolik si ale ne­troufnu
+od­ha­do­vat. Dalším pro­blé­mem je přesné místo konce trasy; když měřím jen práci
+proti při­taž­li­vosti země, musím měřit jen ten nej­str­mější úsek, těch 38 extra
+zko­se­ných metrů stou­pání a pak oka­mžitě pře­stat. Na konci jsem ale měřil i krátký výběh, kdy se stále plazím, ale ubere to pár vteřin. A pak je taky
+pro­blé­mem tempo. Měřil jsem ně­ko­li­krát, ale nikdy jsem ne­tre­fil rytmus, kdy
+bych si při­pa­dal, že jsem využil všechnu do­stup­nou ener­gii; buď jsem pře­hnal na
+za­čátku a druhou půlku, kdy jde do tuhého, prak­ticky stál, nebo to na­tem­po­val
+ply­nu­leji, ale na konci jsem ještě měl ener­gii nazbyt. Po apli­kaci těhle
+ko­rekcí, doufám, se číslo zpřesní o pár wattů nahoru, ale to si nechám na
+příště. Pů­vodně jsem se ani o tomhle ne­chtěl takhle ro­ze­pi­so­vat.&lt;p&gt;Oněch ne­ce­lých 300 wattů před­sta­vuje pouze me­cha­nic­kou stránku práce proti
+gra­vi­taci. Co jsem vyčetl z wi­ki­pe­die, velké svaly jsou &lt;a href="https://k47.cz/2019/drepy.html?utm_medium=feed"&gt;účinné jen z 18% – 26%&lt;/a&gt;. To zna­mená, že v oka­mži­cích stou­pání, jsem vy­dá­val něco kolem 900 – 1200 wattů od­pad­ního tepla. Nevím jak vám, ale mě to při­padá bi­zarně gi­gan­tické
+číslo.&lt;p&gt;Pod stolem mi stojí 800W elek­trický ra­di­á­tor, za nejchlad­něj­ších nocí zimy ho
+pouš­tím na pár minut, abych si ohřál nohy, ale vždy ho ne­chá­vám pálit jen
+chvíli; 800 wattů je in­stantní peklo. A tohle množ­ství horka a ještě něco extra
+vydává jeden or­ga­nis­mus. Není se čemu divit, že se člověk zapotí. Ta­ko­vým
+množ­stvím ener­gie by vy­to­pil malou míst­nost.&lt;p&gt;Ok, musím říct jedno: Nevím jestli se všechna ener­gie ne­vy­u­žitá pro
+roz­po­hy­bo­vání svalů pře­mění na teplo, po­čí­tal bych s tím, ale nejsem si jistý.
+Dovedu si před­sta­vit, že při bu­něč­ném dý­chání může vznik­nout nějaký ve­d­lejší
+pro­dukt, který, i když ob­sa­huje ně­ja­kou po­ten­ci­álně po­u­ži­tel­nou che­mic­kou
+ener­gii, bude vy­lou­čen. Proto jsem &lt;a href="https://k47.cz/tag/wikidemie.html?utm_medium=feed"&gt;jako ob­vykle za­ví­tal na wi­ki­pe­dii&lt;/a&gt; a pár večerů četl o bu­něč­ném dý­chání a pro­dukci ATP a stejně nemám 100% od­po­věď.
+Před­po­klá­dám, že ne­vy­u­žitá ener­gie skončí jako od­padní teplo; pokud víte,
+na­pište do ko­men­tářů.&lt;p&gt;Jinak &lt;a href=https://en.wikipedia.org/wiki/Cellular_respiration&gt;celý ten ko­lo­toč&lt;/a&gt; kolem syn­tézy &lt;a href=https://en.wikipedia.org/wiki/Adenosine_triphosphate&gt;APT&lt;/a&gt; – mo­le­kuly, která
+fun­guje jako trans­portní jed­notka che­mické ener­gie v těle – je po­zo­ru­hodný. Pár
+jich buňky vy­cu­cají z glukózy bez pří­tom­nosti kys­líku, ale vět­šina jich vzniká
+až v &lt;a href="https://k47.cz/2021/mitochondrie.html?utm_medium=feed"&gt;mi­to­chon­drii&lt;/a&gt;; vět­šina ener­gie ne­po­chází z jídla, ale z mo­le­ku­lár­ního
+kys­líku; ATP se nikde ne­u­scho­vává, nikde nečeká, jde pouze o jed­notku pře­nosu,
+je ne­u­stále vy­tvá­řena z po­travy, spa­lo­vána v che­mic­kých pro­ce­sech buňky a lidské tělo zrecykluje svou vlastní váhu v APT každý den.&lt;/p&gt;</description><category>kolo</category><category>metabolismus</category><comments>https://k47.cz/comments.php?u=2021/dynamo</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/dynamo&amp;rss</wfw:commentRss></item>
+<item><title>BLAK</title><guid isPermaLink="true">https://k47.cz/2021/blak.html?utm_medium=feed</guid><pubDate>Wed, 15 Sep 2021 22:30:00 +0200</pubDate><description>&lt;p&gt;&lt;a href="https://k47.cz/2021/bandcamp.html?utm_medium=feed"&gt;Band­camp ex­plo­rer&lt;/a&gt; začíná nést &lt;a href=https://k47.cz/hraje/&gt;první plody&lt;/a&gt;. Le­žérně sle­duju tagy
+&lt;a href="https://k47.cz/bandcamp/?tag=postrock"&gt;post-rock&lt;/a&gt; a &lt;a href="https://k47.cz/bandcamp/?tag=postmetal"&gt;post-metal&lt;/a&gt;, na­slou­chám cvr­kotu na těchto dvou
+frek­ven­cích, často vzá­jemně pře­sa­hu­jí­cích, vět­ši­nou nic zá­sad­ního, ale pak se
+objeví něco, co mě pře­kvapí, zarazí a šokuje.&lt;p&gt;Třeba něco jako &lt;a href=https://thisisblak.bandcamp.com/&gt;BLAK&lt;/a&gt; — post-rock v duchu Mona, tracky kolem deseti
+minut, ne­ko­nečná &lt;i&gt;crescenda&lt;/i&gt;, ne­ú­prosné zdi zvuku, jako kdyby kytary kovaly do
+rudo roz­pá­lený ingot, Skan­dální je, jak je BLAK per­fektní v každém ohledu,
+žádná hluchá místa, ze slu­chá­tek teče bubla­jící řeka roz­pá­le­ného železa přímo
+do slu­cho­vého nervu; do­stá­vám pocit, pa­ra­no­idní, ale opráv­něný, že mě museli
+někdy strčit MRI stroje a re­verz­ním in­že­nýr­stvím neu­ro­no­vých od­po­vědí najít
+per­fektní zvuk, který naplno zapálí tu moji starou &amp; &lt;a href="https://k47.cz/2021/dn.html?utm_medium=feed"&gt;za­tu­cha­jící&lt;/a&gt;
+mozkovnu.&lt;p&gt;Je super zase něco cítit, zase do­stá­vat husí kůži z čistě in­stru­men­tální hudby,
+cítit nut­nost &lt;a href="https://k47.cz/hudba/zavrete-oci-a-poslouchejte-hraje-mono.html?utm_medium=feed"&gt;zavít oči&lt;/a&gt;, spon­tánně od­říz­nout smysly, abych mohl naplno
+&lt;i&gt;po­slou­chat&lt;/i&gt;. V těch oka­mži­cích ne­po­tře­buju nic víc, exis­tence je vy­ma­zána.&lt;p&gt;Dovedu si před­sta­vit tohle po­slou­chat někde na kon­certě, v klubu s níz­kými
+stropy, v přední řadě, ovíván obřími re­pro­duk­tory, osa­mo­cen v davu; možná až
+moc dobře; BLAK na mě působí jako fa­lešná nos­tal­gie; tohle je přesně ta hudba,
+kterou bych měl spo­je­nou se sil­nými zá­žitky, protka­nou s ta­pi­sé­rií vzpo­mí­nek,
+jako Mono, 65da­y­sofsta­tic nebo Swans, jen nic ta­ko­vého ne­e­xis­tuje. Píše se rok
+2021 a po­sled­ních 18 měsíců jsem strá­vil ve stavu ne ne­po­dob­ném en­do­spó­rám,
+které v ne­mrt­vém stavu čekají na pří­hodné pod­mínky k ožití. Ale je to tady,
+BLAK, je to sku­tečné, je to zvláštní a je to per­fektní.&lt;/p&gt;</description><category>hudba</category><category>post-rock</category><category>hudba</category><category>kultura</category><comments>https://k47.cz/comments.php?u=2021/blak</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/blak&amp;rss</wfw:commentRss></item>
+<item><title>Dny nula</title><guid isPermaLink="true">https://k47.cz/2021/dn.html?utm_medium=feed</guid><pubDate>Wed, 8 Sep 2021 00:30:00 +0200</pubDate><description>&lt;p&gt;Na­chá­zím se v mrtvém bodě. Po­slední dny jako kdyby křivka men­tální agi­lity
+do­sáhla fi­nál­ního nadiru. Všechno mi při­padá příliš těžké, každá pře­kážka se
+zdá ne­pře­ko­na­telná, každý krok strojí ob­rov­ské množ­ství námahy. Chci udělat X,
+Y, a Z, ale nic z toho ani s pří­cho­dem půl­noci není do­kon­čeno. Žádná jiskra,
+žádná ener­gie. Jako jediná cesta, zdá se, je ne­dě­lat nic, pře­čkat ve stavu
+str­nu­losti dokud mračna ne­u­stoupí &amp; bude možné se o něco po­ku­sit.&lt;p&gt;Poz­ději jsem chtěl pro­vést určité změny na motoru k47čky, něco roz­sáh­lého, ale
+přesto nudně svět­ského; jednu změnu, na de­tai­lech ne­zá­leží, která si vyžádá
+zásahy do mnoha míst v kódu. Dělal jsem to ti­síc­krát, musí se to jen od­se­dět,
+začít z jed­noho konce a opra­vit místa, která první změna roz­bije a pak
+opra­vo­vat místa, co roz­bijí ty další změny a po­kra­čo­vat dokud se si­tu­ace
+ne­u­stálí v uspo­ko­ji­vém ekvi­lib­riu; jde o tri­vi­ální a z větší části
+bez­myš­len­ko­vou ak­ti­vitu; vy­ko­pejte kořen, za­berte a sle­dujte, co vy­táh­nete ze
+země. Není u toho třeba být in­te­li­gentní, vy­tr­va­lost plně po­sta­čuje. Ale každý
+z těch malých kroků pů­so­bil jako ne­zdolná hora, jako další mo­nu­ment bez­na­děje,
+že tudy cesta nevede, tudy je to příliš ob­tížné, příliš ne­schůdné. Musel jsem
+se nutit, abych začal, ale pak se to opa­ko­valo, na­ra­zil jsem na další pře­kážku
+a při­pa­dal si bez­radný a prázdný, v rukou žádná síla a v mozku stará za­prá­šená
+únava, kterou ne­do­káže zmír­nit žádný od­po­či­nek.&lt;p&gt;Každá pře­kážka se stala ne­ře­ši­tel­ným pro­blé­mem. Co když to tak bude na­po­řád?&lt;p&gt;Někdy, jen zřídka, v si­tu­a­cích nej­vyšší tísně nebo akutní in­trospekce, se mi
+hlavou honí otázka, jak bude vy­pa­dat ko­nečné men­tální ochab­nutí. Všechny
+zna­losti na­brané během let zmizí do šumu neu­ro­no­vého roz­kladu. Bojím se toho,
+straš­livě; na­štěstí jen velmi vzácně, přesto hro­zivě.&lt;p&gt;Na­po­sledy, četl jsem zrovna něco ze světa pro­ce­so­ro­vých mikro-ar­chi­tek­tur, jsem
+dostal ten zvláštní pocit ná­h­lého, velice in­ten­ziv­ního uvě­do­mění, jako když had
+vpustí jed do žil své oběti: Co když se &lt;i&gt;něco&lt;/i&gt; stane a všechny tyhle in­for­mace
+budou ztra­ceny? V po­sled­ních letech jsem strá­vil značné množ­ství času,
+abych na­hro­ma­dil velké množ­ství vě­do­mostí o de­li­kátní a kom­pli­ko­vané ma­ši­né­rii
+pro­ce­sorů a na­jed­nou by to všechno bylo pryč, možná ne všechno, jen
+vět­šina, zů­staly by trosky, obrysy, kou­řící torza vzpo­mí­nek na To­ma­sula, vágní
+ozvěny před­ná­šek Onura Mutla, frag­menty MESI pro­to­kolů, SIMD, ROB, VLIW, IPC,
+zkratky, které se mi vy­ba­vují, i když jim už nejsem scho­pen při­řa­dit význam; jen tolik,
+abych věděl, že jsem kdysi něco věděl, ale teď, jen prach.&lt;p&gt;Byla byl to ztráta nejen dat v paměti, ale bi­zarně i kusu mojí osoby, kusu mě.
+Napsal bych &lt;i&gt;iden­tity&lt;/i&gt;, ale nejsem si jistý, co přesně to slovo zna­mená. Něco,
+by se ztra­tilo, něco, co se podílí na de­fi­nici chaosu ozna­čo­va­ného jako
+exis­tence. Kromě zna­lostí není příliš jiných věcí nebo ak­ti­vit, které bych
+spo­jo­val se se­be­po­je­tím, ne hmotné statky nebo vlast­nic­tví, nemám nic a nejsem
+nic. Vět­ši­nou, když se uvě­do­mění vlast­ního bytí pro­dere na povrch, si při­pa­dám
+jako po­zo­ro­va­tel bez těla, pří­to­men v hma­ta­telné re­a­litě pouze okra­jově.
+De­s­car­tov­ská mysl na­hlíží do hmot­ného světa trh­li­nou v jednom bodě kosmu,
+občas, slabě, signál ne­kva­litní a spo­jení se pře­ru­šuje. Ko­mu­ni­kace s vlast­ním tělem pro­bíhá okra­jově. Při po­hledu do zr­ca­dla si nejsem jistý, kdo je
+vlastně ten člověk na druhé straně; exis­tuje jen slabá pojící linie, ta bytost
+slouží pouze jako nosná schránka, bi­zarní a ne­po­kojná před­stava, to
+nejsem já, já jsem shluk vjemů jím zpro­střed­ko­vaný, já jsem uvnitř něho; tahle
+osoba je někdo cizí, nejsem to já, jen můj hos­ti­tel.&lt;p&gt;Pa­ma­tuji si na noční můru, která mě opa­ko­vaně na­vště­vo­vala před lety: tělo
+usnulo, ale já uvnitř byl stále vzhůru, při smyslech, ale bez kon­taktu s hmot­nou
+schrán­kou, uvěz­něn v ní, bez mož­nosti utéct.&lt;p&gt;Dny nula se pro­je­vují opačně, tělo fun­guje, ale já uvnitř ne.&lt;/p&gt;</description><category>anx</category><category>únava</category><comments>https://k47.cz/comments.php?u=2021/dn</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/dn&amp;rss</wfw:commentRss></item>
+<item><title>Bandcamp explorer</title><guid isPermaLink="true">https://k47.cz/2021/bandcamp.html?utm_medium=feed</guid><pubDate>Sat, 4 Sep 2021 14:20:00 +0200</pubDate><description>&lt;p&gt;&lt;a href="https://k47.cz/2019/rss.html?utm_medium=feed"&gt;Ban­camp neměl RSS&lt;/a&gt;. &lt;a href=https://k47.cz/bandcamp/&gt;Teď ho má&lt;/a&gt;.&lt;p&gt;Band­camp je jeden z těch mo­der­ních &lt;s&gt;webů&lt;/s&gt; &lt;a href="https://k47.cz/ascii/platformy.html?utm_medium=feed"&gt;plat­fo­rem&lt;/a&gt;, které se ve své
+ne­ko­nečné moud­rosti &lt;a href="https://k47.cz/2020/youtube-ne.html?utm_medium=feed"&gt;roz­hodly ig­no­ro­vat&lt;/a&gt; &lt;a href="https://k47.cz/2020/rss-svet.html?utm_medium=feed"&gt;RSS&lt;/a&gt;. Proč se zdr­žo­vat s uni­ver­zálně pod­po­ro­va­ným stan­dar­dem, který lidem umož­ňuje sle­do­vat no­vinky od
+jejich ob­lí­be­ných skupin a žánrů, tím je dostat zpátky na sajtu a dát jim
+mož­nost utra­tit pár €€€ za nové album, ze kte­rých si band­camp vezme svých
+pár pro­cent? Ne, to dává příliš velký smysl. Band­camp je &lt;i&gt;plat­forma&lt;/i&gt; &amp;
+plat­formy si hrají na vlast­ním pí­sečku, pro­tože proto.&lt;p&gt;Tohle jsem už jednou řešil. Někde na k47čce se dá najít &lt;a href="https://k47.cz/site/rss/post-rock.html?utm_medium=feed"&gt;RSS export pro­dukce
+vy­bra­ných post-rocko­vých a post-me­ta­lo­vých skupin&lt;/a&gt;. Co kdy­bych vzal
+scra­po­vací kód, mírně ho roz­ší­řil do podoby robota, který vy­tr­vale crawluje
+celý band­camp a po­skytne RSS feed pro každou sku­pinu a každý tag? Proč ne?&lt;p&gt;Tak přesně to je &lt;a href=https://k47.cz/bandcamp/&gt;&lt;i&gt;band­camp ex­plo­rer&lt;/i&gt;&lt;/a&gt; – jed­no­du­chá věc, která ve stro­hém
+UI nabízí pře­hled nově vy­da­ných alb, jejich export jako RSS a nějaké drob­nosti
+navíc.&lt;p&gt;Jed­no­du­ché, co? Ano i ne. Záhy se uká­zalo, že na band­campu je víc alb než
+na­zna­čo­valy rané odhady. První kom­pletní &lt;i&gt;crawl&lt;/i&gt; vy­š­ťou­ral 890000 alb, EP a single tracků od 87000 umělců. Navíc zcela jistě nejde o kom­pletní obraz všeho,
+co se tam dá najít, tím jsem si jistý.&lt;p&gt;Od té doby crawler (s pře­stáv­kami) běží a ob­je­vuje další obsah, nové sku­piny,
+nové umělce, nová alba. Celé je to di­men­zo­vané tak, aby to běželo na ma­lič­kém
+Raspberry Pi s 1 GB RAM. Nejde o žádný velký stroj, do­konce by se dalo říct, že
+vý­ko­nem a pro­středky jde o pravý opak, menší než běžný mobil. Pravda, ale
+crawler/ge­ne­rá­tor se tam s tro­chou pomoci vejde a má do­sta­teč­nou re­zervu, aby
+ne­pře­ká­žel &lt;a href="https://k47.cz/2020/chan-dump.html?utm_medium=feed"&gt;ostat­ním pro­ce­sům, co tam běží&lt;/a&gt;. Bylo po­třeba udělat ně­ko­lik
+za­jí­ma­vých op­ti­ma­li­zací, co se paměti týká, a na divoké pokusy padl nějaký ten
+večer.&lt;p&gt;Všechno běží na PHP – jak proces ge­ne­ru­jící da­ta­bázi a tak i webový skript – a to není jazyk zrovna pro­slulý svou úspor­ností. Pro do­sta­tečně mo­ti­vo­va­ného
+děl­níka to ne­před­sta­vuje pro­blém, cíl je jasný a musí se ho do­sáh­nout za každou
+cenu, ná­sledky budiž pro­klety. Ex­pe­ri­men­to­vání uká­zalo, že dva nej­dů­le­ži­tější
+triky jsou: ob­jekty re­pre­zen­to­vat jako lehce se­ri­a­li­zo­vané stringy (stačí
+atri­buty spojit a od­dě­lit &lt;code&gt;\0&lt;/code&gt;) a po­u­ží­vat línou ma­te­ri­a­li­zaci, ale vy­hý­bat se
+při ní po­u­žití &lt;code&gt;yield&lt;/code&gt; a &lt;code&gt;Closure&lt;/code&gt;, které se­že­rou pře­kva­pivá kvanta paměti.
+Shr­nuto, pod­tr­ženo: když zkusím do­sta­tečné množ­ství stu­pid­ních nápadů, jeden z nich bude fun­go­vat.&lt;p&gt;Crawler jede při­mě­řeně po­ma­lým tempem. Vy­chází to, že by měl objet celý
+band­camp jednou za týden. Crawlo­vání běží v ná­hod­ném pořadí a ak­tu­a­li­zace
+nemají žádné ga­rance nebo limity, jen ty sto­chas­tické ve stylu, že když hodím
+kost­kou mno­ho­krát, even­tu­álně padne každé číslo a každé sku­pina bude even­tu­álně
+ak­tu­a­li­zo­vaná.&lt;p&gt;A to je všechno: „&lt;i&gt;band­camp ex­plo­rer&lt;/i&gt;“ je nápad, který jsem měl před ±půl rokem
+a z důvodů mimo moji kon­t­rolu ožívá až teď. A pro­tože ho sám po­u­ží­vám, bude mě
+to mo­ti­vo­vat, ho držet v chodu.&lt;hr&gt;
+&lt;p&gt;+1: V tes­to­va­cím pro­vozu jsem sle­do­val &lt;a href="https://k47.cz/bandcamp/?tag=postrock"&gt;pár&lt;/a&gt; &lt;a href="https://k47.cz/bandcamp/?tag=postmetal"&gt;tagů&lt;/a&gt; a už jsem v nich
+našel pár nových &amp; za­jí­ma­vých věcí. Třeba &lt;a href=https://somebecamehollowtubes.bandcamp.com/album/unhealthy-for-sensitive-groups&gt;&lt;i&gt;Some Became Hollow Tubes&lt;/i&gt;&lt;/a&gt;.
+Kla­sická kon­ste­lace alba: Dva tracky, každý má 17 minut, hudba je ne­kenčná, ale
+stále vře a nikdy ne­začne nudit (à la &lt;a href="https://k47.cz/hudba/zapadni-zeme.html?utm_medium=feed"&gt;&lt;i&gt;Wes­tern Lands&lt;/i&gt;&lt;/a&gt;).&lt;/p&gt;</description><category>RSS</category><category>internet</category><category>projekty</category><category>hudba</category><category>kultura</category><comments>https://k47.cz/comments.php?u=2021/bandcamp</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/bandcamp&amp;rss</wfw:commentRss></item>
+<item><title>Steam musí zemřít</title><guid isPermaLink="true">https://k47.cz/2021/steam.html?utm_medium=feed</guid><pubDate>Sun, 29 Aug 2021 16:00:00 +0200</pubDate><description>&lt;p&gt;I přesto, &lt;a href="https://k47.cz/2020/zneuzito.html?utm_medium=feed"&gt;že&lt;/a&gt; &lt;a href="https://k47.cz/2020/ytdl.html?utm_medium=feed"&gt;tu&lt;/a&gt; &lt;a href="https://k47.cz/2020/darktable.html?utm_medium=feed"&gt;opa­ko­vaně&lt;/a&gt; &lt;a href="https://k47.cz/2019/predstavte-si-svet.html?utm_medium=feed"&gt;při­zná­vám&lt;/a&gt; &lt;a href="https://k47.cz/2019/segfault.html?utm_medium=feed"&gt;lo­a­ja­litu&lt;/a&gt;
+&lt;a href="https://k47.cz/2019/stallman.html?utm_medium=feed"&gt;myš­lence&lt;/a&gt; &lt;a href="https://k47.cz/2019/eula.html?utm_medium=feed"&gt;free&lt;/a&gt; &lt;a href="https://k47.cz/2019/deepspeech.html?utm_medium=feed"&gt;soft­waru&lt;/a&gt;, do­ne­dávna jsem po­u­ží­val dvě uza­vřené
+apli­kace. Steam a &lt;a href="https://k47.cz/ascii/na-lovu-barev.html?utm_medium=feed"&gt;Bin­ding of Isaac&lt;/a&gt;. Do­ne­dávna, ale už nikoli.&lt;p&gt;Si­tu­ace je taková, že když člověk chce hrát vpod­statě ja­kou­koli po­čí­ta­čo­vou
+hru, musí mít Steam. Dítko Gabe Newella do­sáhlo de facto mo­no­pol­ního po­sta­vení
+a pa­ra­lelní cesty mimo cha­padla steamu jsou vzácné. Když nebylo zbytí, po­u­ží­val
+jsem steam, exis­tuje verze pro linux &amp; stejně tak celá řada her má své porty
+pro tuč­ňáka. To mi bylo jedno, pro­tože jsem tam hrál jednu je­di­nou hru, už
+zmí­něný Bin­ding of Isaac. Každý den jednu hru krát dvacet až čty­ři­cet minut
+krát pět let, šlo o nej­lépe utra­ce­ných pár euro vůbec.&lt;p&gt;Ne­dávno vyšlo DLC pro starého dob­rého Isaaca a s vi­di­nou ne­u­vě­ři­tel­ného
+množ­ství nového obsahu, gra­fiky, před­mětů, úrovní, cha­rak­terů, ne­přá­tel a her­ních me­cha­nik, které by staré hře vdechly nový život, jsem ho za tři kila
+koupil. Na steamu, po­cho­pi­telně.&lt;p&gt;Jediný pro­blém byl v tom, že tohle DLC nemá na­tivní verzi pro linux. Vý­vo­jáři
+se z důvodů zná­mých jen jim roz­hodli na dítko Linuse Tor­vadse, které v těchto
+dnech osla­vuje tři­cáté na­ro­ze­niny, za­ne­vřít. Ale v tom není žádný pro­blém, na
+Steamu můžu do nějaké lhůty za­kou­pené pro­dukty vrátit a pak je tu sa­mo­zřejmě
+Wine. To im­ple­men­tuje win­dow­sowské API na sys­té­mech, které nemají s micro­sof­tem
+nic spo­leč­ného, a s jeho pomocí můžu Isaaca roz­cho­dit. Nebo přes Proton, což je
+verze Wine přímo im­plan­to­vaná do steamu. Stačí hru smazat, na­sta­vit aby
+star­to­vala s Pro­to­nem, pak se stáhne win­dows verze a jede to.&lt;p&gt;Krása. Takhle jsem hodinu nebo dvě strá­vil s novým DLC. Zá­ro­veň to byla
+po­slední hodina, kdy jsem měl steam.&lt;p&gt;Pro­blém je v tom, že jsem neměl na­in­sta­lo­vaný Steam &lt;i&gt;per se&lt;/i&gt;. Pů­vodně, v dřev­ních dobách jsem stáh­nul &lt;i&gt;.deb&lt;/i&gt; ba­lí­ček, ten na­in­sta­lo­val, ale od té doby
+jsem v prů­běhu ně­ja­kého úklidu z důvodu úspory místa ba­lí­ček se ste­a­mem smazal.
+Isaaca jsem pak spouš­těl přímo z bash skriptu ve složce s in­sta­lací. Ten
+nejdřív nějak spus­til steam z bi­nárky, která kdesi pře­ží­vala, a pak i hru.
+Divné uspo­řá­dání, pravda, ale fun­go­valo a dobře plnilo svůj účel – spus­tit
+jed­ni­nou apli­kaci, kterou po­u­ží­vám. Kom­pli­kace byla v tom, že potom, co jsem
+smazal li­nu­xo­vou verzi Isaaca a na­in­sta­lo­val tu win­dow­sov­skou, star­to­vací
+skript zmizel.&lt;p&gt;Na­jed­nou nemám jak spus­tit steam a z něj spus­tit win­dow­sov­ského Isaaca, pro­tože
+nemám li­nu­xo­vou in­sta­laci Isaaca, kterou musím na­in­sta­lo­vat ze steamu, který
+nemůžu spus­tit, pro­tože… Hmm. No a tak jsem pře­stal po­u­ží­vat steam, vše s ním
+spo­jené a zre­du­ko­val počet počet uza­vře­ných apli­kací o dvě.&lt;p&gt;Není to žádná velká ztráta, roz­hodně ne teď, když vyšel free soft­ware klon
+HOMAM3 &lt;a href="https://k47.cz/2021/vcmi.html?utm_medium=feed"&gt;VCMI s dobou AI&lt;/a&gt; a &lt;a href="https://k47.cz/2019/vcmi-hard.html?utm_medium=feed"&gt;bitvy fan­tas­tic­kých armád&lt;/a&gt; jsou ko­nečně
+zá­bavné a na­pí­navé, a jednu vysoce ná­vy­ko­vou drogou jsem na­hra­dil jinou.&lt;hr&gt;
+&lt;p&gt;+1: Do VCMI do­po­ru­čuju na­in­sta­lo­vat &lt;i&gt;Boost Core mod&lt;/i&gt; &lt;a href=https://wiki.vcmi.eu/Mod_list&gt;tady na se­znamu&lt;/a&gt;.
+Mimo jiné ba­lan­cuje &lt;i&gt;skilly&lt;/i&gt; hrdinů, z nichž ně­které bývaly jen okra­jově
+uži­tečné. Teď každý z nich má svou váhu a žádný není zby­tečný.&lt;/p&gt;</description><category>open source</category><category>hry</category><comments>https://k47.cz/comments.php?u=2021/steam</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/steam&amp;rss</wfw:commentRss></item>
+<item><title>PZ Myers</title><guid isPermaLink="true">https://k47.cz/2021/pzm.html?utm_medium=feed</guid><pubDate>Wed, 25 Aug 2021 23:40:00 +0200</pubDate><description>&lt;p&gt;Vím, jdu s kříž­kem po funuse se zpož­dě­ním asi deset let, ale musím říct, že
+&lt;a href=https://freethoughtblogs.com/pharyngula/&gt;blog PZ Myerse&lt;/a&gt; je docela fajn čtení. Pro­fe­sor bi­o­lo­gie/ate­ista se v tex­tové formě spe­ci­a­li­zuje na &lt;a href="https://k47.cz/2018/idoti-lhari-a-podvodnici.html?utm_medium=feed"&gt;idioty, lháře a pod­vod­níky&lt;/a&gt;, k nim při­hodí
+řádění ná­bo­žen­ských fa­na­tiků, kre­a­ci­o­nisty, pa­vědce, šar­la­tány a akty dal­ších
+po­dobně spe­ci­ál­ních je­dinců. &lt;a href="https://k47.cz/2021/ale-proc.html?utm_medium=feed"&gt;Skoro&lt;/a&gt; &lt;a href="https://k47.cz/2020/kulovy-blesk.html?utm_medium=feed"&gt;vše&lt;/a&gt; &lt;a href="https://k47.cz/2020/smucler.html?utm_medium=feed"&gt;to&lt;/a&gt; &lt;a href="https://k47.cz/2020/vixra.html?utm_medium=feed"&gt;jsou&lt;/a&gt; &lt;a href="https://k47.cz/2020/cc.html?utm_medium=feed"&gt;věci&lt;/a&gt;,
+&lt;a href="https://k47.cz/2020/konspirace-a-koronavirus.html?utm_medium=feed"&gt;v&lt;/a&gt; &lt;a href="https://k47.cz/2020/konspirovirus.html?utm_medium=feed"&gt;nichž&lt;/a&gt; &lt;a href="https://k47.cz/2019/unabomber.html?utm_medium=feed"&gt;re­kre­ačně&lt;/a&gt; &lt;a href="https://k47.cz/2019/zahadna-svetla.html?utm_medium=feed"&gt;plavu&lt;/a&gt; &lt;a href="https://k47.cz/2018/pomatenec.html?utm_medium=feed"&gt;už&lt;/a&gt; &lt;a href="https://k47.cz/2018/konspirace-youtube.html?utm_medium=feed"&gt;nějaký&lt;/a&gt;
+&lt;a href="https://k47.cz/2018/cesta-do-duse.html?utm_medium=feed"&gt;ten&lt;/a&gt; &lt;a href="https://k47.cz/ascii/manosphere.html?utm_medium=feed"&gt;pátek&lt;/a&gt;. A když říkám &lt;i&gt;plavu&lt;/i&gt;, myslím tím mor­bidní zvě­da­vost
+hra­ni­čící s po­sed­lostí. Nemůžu se na­ba­žit, je to jako sle­do­vat srážku vlaků ve
+zpo­ma­le­ném filmu. Neměl bych, nedělá to dobře pro duši, ale nemůžu od­trh­nout
+oči. Jak se někdo může tak ka­ta­stro­ficky mýlit a přesto vše pro­hla­šo­vat s ta­ko­vou se­be­dů­vě­rou?&lt;p&gt;Jeden pří­klad: Aubrey de Grey. Pa­ma­tuju si ho z TED &lt;i&gt;talku&lt;/i&gt; v dáv­ných dobách,
+kdy jsem &lt;a href="https://k47.cz/novinky/ctyri-zajimave-ted-talky.html?utm_medium=feed"&gt;TED &lt;i&gt;talky&lt;/i&gt; bral vážně&lt;/a&gt;, ne jako ve­řej­nou men­tální mastur­baci,
+jejíž smysl je v tom, že si všichni zú­čast­nění při­pa­dají strašně chytří, ale
+nic se reálně ne­změní. Ok, tak tenhle de Grey není vý­zkum­ník dlou­ho­vě­kosti na
+prahu re­vo­luč­ního pro­dlou­žení délky lid­ského života, ale &lt;a href=https://freethoughtblogs.com/pharyngula/2021/08/14/the-success-of-aubrey-de-grey-baffles-me/&gt;v pod­statě šar­la­tán a se­xu­ální pre­dá­tor&lt;/a&gt;. &lt;a href="https://k47.cz/2021/monstrum.html?utm_medium=feed"&gt;Další&lt;/a&gt;. Odsud to vypadá, že pocit vlastní moci s ne­chut­ným cho­vá­ním jde ruku v ruce.&lt;p&gt;On cel­kově Nový Ate­is­mus, k němuž se v za­čát­cích PZ hlásil, na­ra­zil kýlem na
+dno, dalo by se říct. Lídři se uká­zali jako mo­rálně kom­pro­mi­to­vaní; &lt;i&gt;čtyři
+jezdci&lt;/i&gt; měli k osví­ce­nému vedení daleko, z Da­w­kinse se stal vzteklý buldog v kleci, který neumí nic jiného, než kolem sebe štěkat, Hit­chens stihl zemřít
+dřív, než zu­ři­vost po 9/11 kom­pletně vy­chladla a jeho kr­ve­lačné nad­šení do
+válek s mus­lim­ským světem ne­pů­so­bilo &lt;i&gt;tak&lt;/i&gt; ne­lid­sky, Den­nett je stále ok, aspoň
+doufám, stál krok stra­nou epi­cen­tra, víc aka­de­mik než vůdce smečky, i když se
+ví, že na jeden TED letěl na palubě Ep­p­se­ti­novy lotia ex­press, a o Harri­sovi se
+radši ne­mluví. PZ z etudy Nového Ate­ismu a svém pů­so­bení v něm &lt;a href=https://freethoughtblogs.com/pharyngula/2019/01/25/the-train-wreck-that-was-the-new-atheism/&gt;není
+nad­šený&lt;/a&gt;. V po­dobně kri­tic­kém duchu &lt;a href=https://thebaffler.com/latest/new-atheisms-idiot-heirs-nichols&gt;vyšlo&lt;/a&gt; &lt;a href=https://www.salon.com/2017/07/29/from-the-enlightenment-to-the-dark-ages-how-new-atheism-slid-into-the-alt-right/&gt;ně­ko­lik&lt;/a&gt;
+&lt;a href=https://www.salon.com/2021/06/05/how-the-new-atheists-merged-with-the-far-right-a-story-of-intellectual-grift-and-abject-surrender/&gt;článků&lt;/a&gt; a ty po­pi­so­valy hnutí a jeho de­gra­daci vý­hradně v od­stí­nech
+černé. Nový Ate­is­mus jako útočná tak­tika má ome­ze­nou ži­vot­nost, je­di­ným
+po­vo­le­ným aktem je na­pa­dat ira­ci­o­na­litu a ex­trémy ná­bo­žen­ství a i když jich je
+dost, pořád jde o ome­zený pohled na svět a pro­blémy, kterým čelíme. Když pak
+dojdou tyhle cíle, musí se najít nové, ať se děje, co se děje. Tak po­stupně
+došlo k fúzi s alt-right a &lt;i&gt;in­tellectual dark web&lt;/i&gt;, což je docela jiná sorta
+lidí, než osví­cení hu­ma­nisté, za které se Nový Ate­is­mus rád přestro­jo­val.&lt;p&gt;Nicméně PZ je jeden z těch pří­čet­něj­ších, kteří zů­stali věrni prin­ci­pům
+hu­ma­nismu a skep­ti­cismu. &lt;s&gt;Můj plán je teď pře­číst jeho blog od za­čátku do konce,
+všech 29000 článků za po­sled­ních 15.5 roku.&lt;/s&gt; Jo, nutno dodat, že PZ byl &lt;i&gt;velice&lt;/i&gt;
+ak­tivní ve svém psaní.&lt;/p&gt;</description><comments>https://k47.cz/comments.php?u=2021/pzm</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/pzm&amp;rss</wfw:commentRss></item>
+<item><title>Sean Lock, mrtvý</title><guid isPermaLink="true">https://k47.cz/2021/sean-lock.html?utm_medium=feed</guid><pubDate>Sat, 21 Aug 2021 01:10:00 +0200</pubDate><description>&lt;p&gt;Nej­vtip­nější komik Bri­tá­nie zemřel, 58 let, ra­ko­vina. Svět je pro to o něco
+smut­nější a já ne­cí­tím nic. To není dobře. Tak by neměla vy­pa­dat reakce na
+de­fi­ni­tivní zánik nej­ob­lí­be­něj­šího komika. Neměla by, ale vypadá.&lt;p&gt;Stalo se to před čtyřmi dny, o dvě rána a dva sou­mraky poz­ději na wi­ki­pe­dii
+přibyl &lt;a href="https://en.wikipedia.org/w/index.php?title=Sean_Lock&amp;action=historysubmit&amp;type=revision&amp;diff=1039374578&amp;oldid=1039374343"&gt;osudný edit&lt;/a&gt;, změnil &lt;i&gt;is&lt;/i&gt; za &lt;i&gt;was&lt;/i&gt; a uza­vřel ka­pi­tolu jed­noho
+života i pro nás ostatní, kteří opile po­kři­ku­jeme ze zad­ních řad a věříme
+pri­márně jen tomu, na co si můžeme sáh­nout.&lt;p&gt;Tak to je všechno, svět kaž­dého z nás se vy­trácí a bude se vy­trá­cet dokud
+ne­zů­sta­neme osměle stát na konci prkna ve světě, který nám ne­patří a kte­rému
+ne­ro­zu­míme. Vše co jsme znali, pryč, vše s čím jsme vy­růs­tali, pryč, vše co
+jsme mi­lo­vali, pryč. Jen cizí svět, po­sta­vený z cizích snů a cizích vtipů a ani
+ty nejsou tak dobré, jak bývaly.&lt;p&gt;Někdy pře­mýš­lím, kdy ztra­tím nit, kdy se pode mnou utrhne lavina a začnu být
+mimo, exu­lant v ne­známé re­a­litě, a ono se to dost možná už stalo, první kroky
+byly uči­něny, po­cho­duju podle vlast­ního rytmu, mimo koryto spo­leč­nosti, jako
+pous­tev­ník žijící na skládce. Kolik no­vi­nek se vám zarylo pod kůži? Kolik
+autorů nebo skupin jste si za­mi­lo­vali? Kolik nových přátel máte? Jak moc se
+pohnul hod­no­tový systém? Jak moc se změ­nila vnitřní mo­ti­vace? Nijak, je to
+stále to staré známé, jen méně in­ten­zivně a zá­ro­veň ri­gid­něji? Vra­cíte &lt;a href="https://k47.cz/2018/en.html?utm_medium=feed"&gt;se&lt;/a&gt;
+&lt;a href="https://k47.cz/2019/soad.html?utm_medium=feed"&gt;zpátky&lt;/a&gt;? Jedete na nos­tal­gii jako na se­ri­ózní uži­va­tel he­ro­inu, jemuž do­chází
+žíly? Čím slabší impulz, tím to svědčí o větší osi­fi­kaci. Mu­mi­fi­ku­jeme se ve
+vlastní iden­titě.&lt;p&gt;Když o tom tak pře­mýš­lím, podle těch kri­té­rií jsem mumie už celé věky;
+per­fektní, na­lo­žená v pa­ra­fínu, při­pra­vená vy­čká­vat na signál věč­nosti. Když
+jsem roz­mýš­lel, co dneska napsat, pro­čí­tal jsem svoje minulé texty pro
+in­spi­raci, jednak ty tady na k47čce a pak ně­které ne­ve­řejné a pro­boha, září z nich do ruda roz­pá­lená in­ten­zita činu, touhy něco dělat, ab­sor­bo­vat svět &amp; vše
+co nabízí. Hlavně touhy, ne její re­a­li­zace. Z řádek sálá di­a­me­t­rálně od­lišný
+svět, 13 let na­zpá­tek nebo kolik a jako kdyby to psal docela jiný člověk. Vím,
+co jsem kdysi myslel, ale sen­ti­ment se zdá cizí, jako glyfy starého písma.
+Víte, hod­noty se ne­změ­nily tolik, jen vy­hasly.&lt;p&gt;Otázka zní: Dokážu se do něčeho nového po­no­řit naplno, za­mi­lo­vat si to a pro­ží­vat to, ať už jde o cokoli, akt, osoba, ar­te­fakt, s ma­xi­mální možnou
+in­ten­zi­tou? Doufám, i když cítím, že od­po­věď se mi nebude líbit.&lt;p&gt;O čem jsem to psal? Jo, Sean Lock, nej­lepší komik široko daleko, zemřel…&lt;blockquote&gt;&lt;p&gt;I was kil­ling this pig with a hammer and I thou­ght: I need ho­li­day.&lt;/p&gt;&lt;/blockquote&gt;</description><category>smrt</category><category>anx</category><comments>https://k47.cz/comments.php?u=2021/sean-lock</comments><wfw:commentRss>https://k47.cz/comments.php?u=2021/sean-lock&amp;rss</wfw:commentRss></item>
+</channel></rss>

@@ -55,7 +55,7 @@ data class RssItem(
     // Describes a media object that is attached to the item
     val enclosure: RssItemEnclosure?,
     // A string that uniquely identifies the item
-    val guid: String?,
+    val guid: RssItemGuid?,
     // Indicates when the item was published
     val pubDate: Date?,
     // The RSS channel that the item came from
@@ -78,6 +78,13 @@ data class RssItemEnclosure(
     // type says what its type is, a standard MIME type
     val type: String,
 )
+
+sealed class RssItemGuid {
+    data class StringGuid(val value: String) : RssItemGuid()
+
+    // only if isPermalink = true
+    data class UrlGuid(val value: URL) : RssItemGuid()
+}
 
 data class RssItemSource(
     // url links to the source XML
@@ -226,6 +233,24 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
             null
         }
 
+        var guid: RssItemGuid? = null
+
+        element.getElementsByTagName("guid")?.item(0)?.apply {
+            val permalink = attributes?.getNamedItem("isPermaLink")?.textContent == "true"
+
+            guid = if (permalink) {
+                val url = runCatching {
+                    URI.create(textContent).toURL()
+                }.getOrElse {
+                    return@map Result.failure(Exception("Failed to parse guid as URL"))
+                }
+
+                RssItemGuid.UrlGuid(url)
+            } else {
+                RssItemGuid.StringGuid(textContent)
+            }
+        }
+
         var source: RssItemSource? = null
 
         element.getElementsByTagName("source")?.item(0)?.apply {
@@ -253,7 +278,7 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
                 categories = categories,
                 comments = comments,
                 enclosure = enclosure,
-                guid = element.getElementsByTagName("guid")?.item(0)?.textContent,
+                guid = guid,
                 pubDate = pubDate,
                 source = source,
             )
