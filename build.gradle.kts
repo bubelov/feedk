@@ -81,3 +81,25 @@ dependencies {
     implementation(kotlin("stdlib"))
     testImplementation(kotlin("test"))
 }
+
+gradle.projectsEvaluated {
+    tasks.withType(Test::class.java).forEach {
+        it.addTestListener(object : TestListener {
+            override fun beforeSuite(desc: TestDescriptor) {
+
+            }
+
+            override fun afterSuite(desc: TestDescriptor, result: TestResult) {
+
+            }
+
+            override fun beforeTest(desc: TestDescriptor) {
+
+            }
+
+            override fun afterTest(desc: TestDescriptor, result: TestResult) {
+                println("test ${desc.name} ... ${result.resultType}")
+            }
+        })
+    }
+}

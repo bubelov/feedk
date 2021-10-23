@@ -6,7 +6,7 @@ import kotlin.test.Test
 class Test {
 
     @Test
-    fun `Should parse all feeds in test set`() {
+    fun `parse feeds`() {
         val feedDirs = listOf(
             File("src/test/resources/atom"),
             File("src/test/resources/rss"),
@@ -25,7 +25,7 @@ class Test {
     }
 
     @Test
-    fun `Should parse RFC 822 dates`() {
+    fun `parse rfc 822 dates`() {
         val dates = listOf(
             "Mon, 21 Jan 2019 16:06:12 GMT",
             "Mon, 27 Jan 2020 17:55:00 EST",
