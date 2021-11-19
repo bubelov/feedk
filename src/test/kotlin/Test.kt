@@ -14,7 +14,13 @@ class Test {
 
         val feedFiles = feedDirs.map { it.listFiles()!!.toList() }.flatten()
         println("There are ${feedFiles.size} feed files")
-        val feeds = feedFiles.map { feed(it.toURI().toURL()).getOrThrow() }
+
+        val feeds = feedFiles.map {
+            when (val res = feed(it.toURI().toURL())) {
+                is FeedResult.Success -> res.feed
+                else -> throw Exception()
+            }
+        }
 
         feeds.forEach {
             when (it) {

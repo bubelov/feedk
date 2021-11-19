@@ -1,22 +1,66 @@
 package co.appreactor.feedk
 
+import java.net.HttpURLConnection
 import java.net.URL
 import javax.xml.parsers.DocumentBuilderFactory
 
 sealed class Feed
 
-fun feed(url: URL): Result<Feed> {
+fun feed(url: URL): FeedResult {
     val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
 
-    val document = runCatching {
-        documentBuilder.parse(url.openStream())
+    val connection = runCatching {
+        url.openConnection()
     }.getOrElse {
-        return Result.failure(it)
+        return FeedResult.HttpConnectionFailure(it)
+    }
+
+    runCatching {
+        if (connection is HttpURLConnection) {
+            connection.connect()
+        }
+    }.onFailure {
+        return FeedResult.HttpConnectionFailure(it)
+    }
+
+    if (connection is HttpURLConnection) {
+        val httpResponseCode = connection.responseCode
+
+        if (httpResponseCode != 200) {
+            return FeedResult.HttpNotOk(
+                responseCode = httpResponseCode,
+                message = connection.errorStream.reader().readText()
+            )
+        }
+    }
+
+    val document = runCatching {
+        documentBuilder.parse(connection.inputStream)
+    }.getOrElse {
+        return FeedResult.ParserFailure(it)
     }
 
     return when (feedType(document)) {
-        FeedType.ATOM -> atomFeed(document, url)
-        FeedType.RSS -> rssFeed(document)
-        FeedType.UNKNOWN -> Result.failure(Exception("Unknown feed type"))
+        FeedType.ATOM -> {
+            val result = atomFeed(document, url)
+
+            if (result.isSuccess) {
+                FeedResult.Success(result.getOrNull()!!)
+            } else {
+                FeedResult.ParserFailure(result.exceptionOrNull()!!)
+            }
+        }
+
+        FeedType.RSS -> {
+            val result = rssFeed(document)
+
+            if (result.isSuccess) {
+                FeedResult.Success(result.getOrNull()!!)
+            } else {
+                FeedResult.ParserFailure(result.exceptionOrNull()!!)
+            }
+        }
+
+        FeedType.UNKNOWN -> FeedResult.UnknownFeedType
     }
 }
