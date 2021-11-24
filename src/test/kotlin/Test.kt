@@ -1,7 +1,10 @@
 package co.appreactor.feedk
 
+import okhttp3.mockwebserver.MockResponse
+import okhttp3.mockwebserver.MockWebServer
 import java.io.File
 import kotlin.test.Test
+import kotlin.test.assertEquals
 
 class Test {
 
@@ -43,5 +46,23 @@ class Test {
             val parsedDate = RFC_822.parse(date).toInstant()
             println("Parsed date: $parsedDate")
         }
+    }
+
+    @Test
+    fun `HTTP not OK`() {
+        val server = MockWebServer().apply {
+            enqueue(MockResponse().setResponseCode(404))
+            start()
+        }
+
+        val path = "/feed.xml"
+
+        val feedResult = feed(server.url(path).toUrl())
+        assert(feedResult is FeedResult.HttpNotOk)
+
+        val request = server.takeRequest()
+        assertEquals(path, request.path)
+
+        server.shutdown()
     }
 }

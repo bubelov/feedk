@@ -31,7 +31,7 @@ fun feed(url: URL, openedConnection: URLConnection? = null): FeedResult {
         if (httpResponseCode != 200) {
             return FeedResult.HttpNotOk(
                 responseCode = httpResponseCode,
-                message = connection.errorStream.reader().readText()
+                message = connection.errorStream?.reader()?.readText() ?: "",
             )
         }
     }
