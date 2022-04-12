@@ -2,8 +2,6 @@ package co.appreactor.feedk
 
 import org.w3c.dom.Document
 import org.w3c.dom.Element
-import java.net.URL
-import javax.xml.parsers.DocumentBuilderFactory
 
 data class AtomFeed(
     val title: String,
@@ -25,25 +23,13 @@ data class AtomEntry(
     val enclosureLinkType: String,
 )
 
-fun atomFeed(url: URL): Result<AtomFeed> {
-    val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
-
-    val document = runCatching {
-        documentBuilder.parse(url.openStream())
-    }.getOrElse {
-        return Result.failure(it)
-    }
-
-    return atomFeed(document, url)
-}
-
-fun atomFeed(document: Document, url: URL): Result<AtomFeed> {
+fun atomFeed(document: Document): Result<AtomFeed> {
     val documentElement = document.documentElement
 
     val title = documentElement.getElementsByTagName("title").item(0).textContent
         ?: throw Exception("Atom channel has no title")
 
-    var selfLink = url.toString()
+    var selfLink = ""
     var alternateLink = ""
 
     (0 until documentElement.childNodes.length)
@@ -58,14 +44,6 @@ fun atomFeed(document: Document, url: URL): Result<AtomFeed> {
                 "alternate" -> alternateLink = href
             }
         }
-
-    if (selfLink.startsWith("http") && !selfLink.startsWith("https")) {
-        selfLink = selfLink.replaceFirst("http", "https")
-    }
-
-    if (!selfLink.startsWith("https")) {
-        selfLink = url.toString()
-    }
 
     return Result.success(
         AtomFeed(
@@ -125,7 +103,7 @@ fun atomEntries(document: Document): Result<List<AtomEntry>> {
 
         // > atom:entry elements MUST contain exactly one atom:updated element.
         // Source: https://tools.ietf.org/html/rfc4287
-        val author = entry.getElementsByTagName("author")?.item(0)
+        val author = entry.getElementsByTagName("author").item(0)
 
         // TODO
         // atom:entry elements MUST contain one or more atom:author elements, unless the atom:entry
@@ -133,7 +111,7 @@ fun atomEntries(document: Document): Result<List<AtomEntry>> {
         // Document, the atom:feed element contains an atom:author element itself.
         // Source: https://tools.ietf.org/html/rfc4287
         val authorName = if (author != null && author is Element) {
-            author.getElementsByTagName("name")?.item(0)?.textContent ?: ""
+            author.getElementsByTagName("name").item(0)?.textContent ?: ""
         } else {
             ""
         }

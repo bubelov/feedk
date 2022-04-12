@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.konan.properties.loadProperties
 
 plugins {
-    kotlin("jvm") version "1.6.0"
+    kotlin("jvm") version "1.6.20"
     `maven-publish`
     signing
 }
@@ -78,9 +78,7 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib"))
     testImplementation(kotlin("test"))
-    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.2")
 }
 
 gradle.projectsEvaluated {

@@ -1,68 +1,50 @@
 package co.appreactor.feedk
 
-import java.net.HttpURLConnection
-import java.net.URL
-import java.net.URLConnection
+import org.xml.sax.SAXException
+import java.io.IOException
+import java.io.InputStream
 import javax.xml.parsers.DocumentBuilderFactory
 
 sealed class Feed
 
-fun feed(url: URL, openedConnection: URLConnection? = null): FeedResult {
-    val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
+private val xmlDocumentBuilder by lazy { DocumentBuilderFactory.newInstance().newDocumentBuilder() }
 
-    val connection = openedConnection
-        ?: runCatching {
-            url.openConnection()
-        }.getOrElse {
-            return FeedResult.HttpConnectionFailure(it)
-        }
-
-    runCatching {
-        if (connection is HttpURLConnection) {
-            connection.connect()
-        }
-    }.onFailure {
-        return FeedResult.HttpConnectionFailure(it)
+fun feed(inputStream: InputStream, mediaType: String): FeedResult {
+    return if (mediaType.startsWith("text/xml")) {
+        return feedFromXml(inputStream)
+    } else {
+        FeedResult.UnsupportedMediaType(mediaType)
     }
+}
 
-    if (connection is HttpURLConnection) {
-        val httpResponseCode = connection.responseCode
-
-        if (httpResponseCode != 200) {
-            return FeedResult.HttpNotOk(
-                responseCode = httpResponseCode,
-                message = connection.errorStream?.reader()?.readText() ?: "",
-            )
-        }
-    }
-
+private fun feedFromXml(inputStream: InputStream): FeedResult {
     val document = runCatching {
-        documentBuilder.parse(connection.inputStream)
+        xmlDocumentBuilder.parse(inputStream)
     }.getOrElse {
-        return FeedResult.ParserFailure(it)
+        return when (it) {
+            is SAXException -> FeedResult.ParserError(it)
+            is IOException -> FeedResult.IOError(it)
+            else -> throw IllegalStateException()
+        }
     }
 
     return when (feedType(document)) {
         FeedType.ATOM -> {
-            val result = atomFeed(document, url)
-
-            if (result.isSuccess) {
-                FeedResult.Success(result.getOrNull()!!)
-            } else {
-                FeedResult.ParserFailure(result.exceptionOrNull()!!)
+            atomFeed(document).map {
+                FeedResult.Success(it)
+            }.getOrElse {
+                FeedResult.ParserError(it)
             }
         }
 
         FeedType.RSS -> {
-            val result = rssFeed(document)
-
-            if (result.isSuccess) {
-                FeedResult.Success(result.getOrNull()!!)
-            } else {
-                FeedResult.ParserFailure(result.exceptionOrNull()!!)
+            rssFeed(document).map {
+                FeedResult.Success(it)
+            }.getOrElse {
+                FeedResult.ParserError(it)
             }
         }
 
-        FeedType.UNKNOWN -> FeedResult.UnknownFeedType
+        FeedType.UNKNOWN -> FeedResult.UnsupportedFeedType
     }
 }
