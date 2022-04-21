@@ -43,10 +43,10 @@ fun atomFeed(document: Document): Result<AtomFeed> {
     val title = documentElement.getElementsByTagName("title").item(0).textContent
         ?: return Result.failure(Exception("Channel has no title"))
 
-    val links = (0 until documentElement.childNodes.length)
-        .mapNotNull { documentElement.childNodes.item(it) }
-        .filter { it is Element && it.tagName == "link" }
-        .map { it as Element }
+    val links = documentElement.childNodes
+        .list()
+        .filterIsInstance<Element>()
+        .filter { it.tagName == "link" }
         .map { element -> element.toAtomLink().getOrElse { return Result.failure(it) } }
 
     return Result.success(
@@ -106,9 +106,9 @@ fun atomEntries(document: Document): Result<List<AtomEntry>> {
 
         val linkElements = entry.getElementsByTagName("link")
 
-        val links = (0 until linkElements.length)
-            .mapNotNull { linkElements.item(it) }
-            .map { it as Element }
+        val links = linkElements
+            .list()
+            .filterIsInstance<Element>()
             .map { element -> element.toAtomLink().getOrElse { return Result.failure(it) } }
 
         AtomEntry(

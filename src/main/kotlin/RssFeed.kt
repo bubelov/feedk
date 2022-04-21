@@ -2,12 +2,11 @@ package co.appreactor.feedk
 
 import org.w3c.dom.Document
 import org.w3c.dom.Element
-import org.w3c.dom.NodeList
 import java.net.URI
 import java.net.URL
 import java.text.SimpleDateFormat
-import java.util.*
-import javax.xml.parsers.DocumentBuilderFactory
+import java.util.Date
+import java.util.Locale
 
 val RFC_822 = SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.US)
 
@@ -27,7 +26,7 @@ data class RssChannel(
     // same as the title of your website
     val title: String,
     // The URL to the HTML website corresponding to the channel
-    val link: URL,
+    val link: String,
     // Phrase or sentence describing the channel
     val description: String,
     // A channel may contain any number of <item>s. An item may represent a "story" -- much like a
@@ -43,7 +42,7 @@ data class RssItem(
     // The title of the item
     val title: String?,
     // The URL of the item
-    val link: URL?,
+    val link: String?,
     // The item synopsis.
     val description: String?,
     // Email address of the author of the item
@@ -93,20 +92,8 @@ data class RssItemSource(
     val value: String?,
 )
 
-fun rssFeed(url: URL): Result<RssFeed> {
-    val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
-
-    val document = runCatching {
-        documentBuilder.parse(url.openStream())
-    }.getOrElse {
-        return Result.failure(it)
-    }
-
-    return rssFeed(document)
-}
-
 fun rssFeed(document: Document): Result<RssFeed> {
-    val rawVersion = document.documentElement.attributes?.getNamedItem("version")?.textContent
+    val rawVersion = document.documentElement.attributes.getNamedItem("version")?.textContent
 
     if (rawVersion.isNullOrBlank()) {
         return Result.failure(Exception("RSS version is missing"))
@@ -119,19 +106,13 @@ fun rssFeed(document: Document): Result<RssFeed> {
 
     val channel = document.documentElement.getElementsByTagName("channel").item(0) as Element
 
-    val title = channel.getElementsByTagName("title")?.item(0)?.textContent
+    val title = channel.getElementsByTagName("title").item(0)?.textContent
         ?: return Result.failure(Exception("Channel has no title"))
 
-    val rawLink = channel.getElementsByTagName("link")?.item(0)?.textContent
+    val link = channel.getElementsByTagName("link").item(0)?.textContent
         ?: return Result.failure(Exception("Channel has no link"))
 
-    val link = runCatching {
-        URI.create(rawLink).toURL()
-    }.getOrElse {
-        return Result.failure(Exception("Failed to parse link as URL"))
-    }
-
-    val description = channel.getElementsByTagName("description")?.item(0)?.textContent
+    val description = channel.getElementsByTagName("description").item(0)?.textContent
         ?: return Result.failure(Exception("Channel has no description"))
 
     return Result.success(
@@ -148,33 +129,25 @@ fun rssFeed(document: Document): Result<RssFeed> {
 }
 
 fun rssItems(document: Document): Result<List<Result<RssItem>>> {
-    val channel = document.documentElement.getElementsByTagName("channel")?.item(0) as Element?
+    val channel = document.documentElement.getElementsByTagName("channel").item(0) as Element?
         ?: return Result.failure(Exception("Missing element: channel"))
 
-    val itemElements = channel.getElementsByTagName("item")?.toList()
-        ?: return Result.failure(Exception("Failed to read channel items"))
+    val itemElements = channel.getElementsByTagName("item").list().filterIsInstance<Element>()
 
     val items: List<Result<RssItem>> = itemElements.map { element ->
-        val rawLink = element.getElementsByTagName("link")?.item(0)?.textContent
+        val link = element.getElementsByTagName("link").item(0)?.textContent
 
-        val link = if (rawLink != null) {
-            runCatching {
-                URI.create(rawLink).toURL()
-            }.getOrElse {
-                return@map Result.failure(Exception("Failed to parse link as URL"))
+        val categories = element.getElementsByTagName("category")
+            .list()
+            .filterIsInstance<Element>()
+            .map { categoryElement ->
+                RssItemCategory(
+                    domain = categoryElement.attributes.getNamedItem("domain")?.textContent,
+                    value = categoryElement.textContent ?: "",
+                )
             }
-        } else {
-            null
-        }
 
-        val categories = element.getElementsByTagName("category").toList().map { categoryElement ->
-            RssItemCategory(
-                domain = categoryElement.attributes?.getNamedItem("domain")?.textContent,
-                value = categoryElement.textContent ?: "",
-            )
-        }
-
-        val commentsElements = element.getElementsByTagName("comments").toList()
+        val commentsElements = element.getElementsByTagName("comments").list().filterIsInstance<Element>()
 
         if (commentsElements.size > 1) {
             return Result.failure(
@@ -192,8 +165,8 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
 
         var enclosure: RssItemEnclosure? = null
 
-        element.getElementsByTagName("enclosure")?.item(0)?.apply {
-            val rawUrl = attributes?.getNamedItem("url")?.textContent
+        element.getElementsByTagName("enclosure").item(0)?.apply {
+            val rawUrl = attributes.getNamedItem("url")?.textContent
                 ?: return@map Result.failure(Exception("Enclosure URL is missing"))
 
             val url = runCatching {
@@ -202,7 +175,7 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
                 return@map Result.failure(Exception("Failed to parse enclosure URL"))
             }
 
-            val rawLength = attributes?.getNamedItem("length")?.textContent
+            val rawLength = attributes.getNamedItem("length")?.textContent
                 ?: return@map Result.failure(Exception("Enclosure length is missing"))
 
             val length = runCatching {
@@ -211,7 +184,7 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
                 return@map Result.failure(Exception("Failed to parse enclosure length"))
             }
 
-            val type = attributes?.getNamedItem("type")?.textContent
+            val type = attributes.getNamedItem("type")?.textContent
                 ?: return@map Result.failure(Exception("Enclosure type is missing"))
 
             enclosure = RssItemEnclosure(
@@ -221,7 +194,7 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
             )
         }
 
-        val rawPubDate = element.getElementsByTagName("pubDate")?.item(0)?.textContent?.trim()
+        val rawPubDate = element.getElementsByTagName("pubDate").item(0)?.textContent?.trim()
 
         val pubDate = if (rawPubDate != null) {
             runCatching {
@@ -235,8 +208,8 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
 
         var guid: RssItemGuid? = null
 
-        element.getElementsByTagName("guid")?.item(0)?.apply {
-            val permalink = attributes?.getNamedItem("isPermaLink")?.textContent == "true"
+        element.getElementsByTagName("guid").item(0)?.apply {
+            val permalink = attributes.getNamedItem("isPermaLink")?.textContent == "true"
 
             guid = if (permalink) {
                 val url = runCatching {
@@ -253,8 +226,8 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
 
         var source: RssItemSource? = null
 
-        element.getElementsByTagName("source")?.item(0)?.apply {
-            val rawUrl = attributes?.getNamedItem("url")?.textContent
+        element.getElementsByTagName("source").item(0)?.apply {
+            val rawUrl = attributes.getNamedItem("url")?.textContent
                 ?: return@map Result.failure(Exception("Source URL is missing"))
 
             val url = runCatching {
@@ -271,10 +244,10 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
 
         Result.success(
             RssItem(
-                title = element.getElementsByTagName("title")?.item(0)?.textContent,
+                title = element.getElementsByTagName("title").item(0)?.textContent,
                 link = link,
-                description = element.getElementsByTagName("description")?.item(0)?.textContent,
-                author = element.getElementsByTagName("author")?.item(0)?.textContent,
+                description = element.getElementsByTagName("description").item(0)?.textContent,
+                author = element.getElementsByTagName("author").item(0)?.textContent,
                 categories = categories,
                 comments = comments,
                 enclosure = enclosure,
@@ -286,14 +259,4 @@ fun rssItems(document: Document): Result<List<Result<RssItem>>> {
     }
 
     return Result.success(items)
-}
-
-private fun NodeList.toList(): List<Element> {
-    val list = mutableListOf<Element>()
-
-    repeat(length) {
-        list += item(it) as Element
-    }
-
-    return list
 }
