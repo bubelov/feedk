@@ -16,7 +16,7 @@ data class AtomEntry(
     val published: String,
     val updated: String,
     val authorName: String,
-    val content: String,
+    val content: AtomEntryContent,
     val links: List<AtomLink>,
 )
 
@@ -35,6 +35,56 @@ sealed class AtomLinkRel {
     object Related : AtomLinkRel()
     object Self : AtomLinkRel()
     object Via : AtomLinkRel()
+}
+
+/*
+https://datatracker.ietf.org/doc/html/rfc4287#section-4.1.3
+
+atomInlineTextContent =
+  element atom:content {
+     atomCommonAttributes,
+     attribute type { "text" | "html" }?,
+     (text)*
+  }
+
+atomInlineXHTMLContent =
+  element atom:content {
+     atomCommonAttributes,
+     attribute type { "xhtml" },
+     xhtmlDiv
+  }
+
+atomInlineOtherContent =
+  element atom:content {
+     atomCommonAttributes,
+     attribute type { atomMediaType }?,
+     (text|anyElement)*
+  }
+
+atomOutOfLineContent =
+  element atom:content {
+     atomCommonAttributes,
+     attribute type { atomMediaType }?,
+     attribute src { atomUri },
+     empty
+  }
+
+atomContent = atomInlineTextContent
+| atomInlineXHTMLContent
+| atomInlineOtherContent
+| atomOutOfLineContent
+ */
+data class AtomEntryContent(
+    val type: AtomEntryContentType,
+    val src: String,
+    val text: String,
+)
+
+sealed class AtomEntryContentType {
+    object Text : AtomEntryContentType()
+    object Html : AtomEntryContentType()
+    object Xhtml : AtomEntryContentType()
+    data class Mime(val mime: String) : AtomEntryContentType()
 }
 
 fun atomFeed(document: Document): Result<AtomFeed> {
@@ -76,12 +126,54 @@ fun atomEntries(document: Document): Result<List<AtomEntry>> {
         val title =
             entry.getElementsByTagName("title").item(0).textContent ?: return@mapNotNull null
 
-        var content = ""
+        val content: AtomEntryContent
 
         val contentElements = entry.getElementsByTagName("content")
 
-        if (contentElements.length > 0) {
-            content = contentElements.item(0).textContent ?: ""
+        when (contentElements.length) {
+            0 -> {
+                /*
+                TODO
+
+                https://datatracker.ietf.org/doc/html/rfc4287#section-4.1.2
+
+                atom:entry elements that contain no child atom:content element
+                MUST contain at least one atom:link element with a rel attribute
+                value of "alternate"
+                 */
+                content = AtomEntryContent(
+                    type = AtomEntryContentType.Text,
+                    src = "",
+                    text = "",
+                )
+            }
+
+            1 -> {
+                val element = contentElements.item(0) as Element
+                val rawContentType = element.getAttribute("type").trim()
+                val src = element.getAttribute("src").trim()
+
+                if (rawContentType.isEmpty() && src.isNotEmpty()) {
+                    return Result.failure(Exception("Content type is missing"))
+                }
+
+                val contentType = when (rawContentType) {
+                    "", "text" -> AtomEntryContentType.Text
+                    "html" -> AtomEntryContentType.Html
+                    "xhtml" -> AtomEntryContentType.Xhtml
+                    else -> AtomEntryContentType.Mime(rawContentType)
+                }
+
+                content = AtomEntryContent(
+                    type = contentType,
+                    src = src,
+                    text = element.textContent,
+                )
+            }
+
+            else -> {
+                return Result.failure(Exception("Feed entry has more than one content element"))
+            }
         }
 
         // > atom:entry elements MUST contain exactly one atom:updated element.
