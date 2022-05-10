@@ -10,7 +10,12 @@ sealed class Feed
 private val xmlDocumentBuilder by lazy { DocumentBuilderFactory.newInstance().newDocumentBuilder() }
 
 fun feed(inputStream: InputStream, mediaType: String): FeedResult {
-    return if (mediaType.startsWith("text/xml")) {
+    return if (
+        mediaType.startsWith("application/rss+xml")
+        || mediaType.startsWith("application/atom+xml")
+        || mediaType.startsWith("application/xml")
+        || mediaType.startsWith("text/xml")
+    ) {
         return feedFromXml(inputStream)
     } else {
         FeedResult.UnsupportedMediaType(mediaType)
