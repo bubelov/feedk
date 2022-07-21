@@ -18,6 +18,7 @@ data class AtomEntry(
     val authorName: String,
     val content: AtomEntryContent,
     val links: List<AtomLink>,
+    val summary: AtomEntrySummary?,
 )
 
 data class AtomLink(
@@ -87,6 +88,11 @@ sealed class AtomEntryContentType {
     object Xhtml : AtomEntryContentType()
     data class Mime(val mime: String) : AtomEntryContentType()
 }
+
+data class AtomEntrySummary(
+    val type: String,
+    val text: String,
+)
 
 fun atomFeed(document: Document): Result<AtomFeed> {
     val documentElement = document.documentElement
@@ -177,6 +183,30 @@ fun atomEntries(document: Document): Result<List<AtomEntry>> {
             }
         }
 
+        val summary: AtomEntrySummary?
+
+        val summaryElements = entry.getElementsByTagName("summary")
+
+        when (summaryElements.length) {
+            0 -> {
+                summary = null
+            }
+
+            1 -> {
+                val element = summaryElements.item(0) as Element
+                val rawContentType = element.getAttribute("type").trim()
+
+                summary = AtomEntrySummary(
+                    type = rawContentType,
+                    text = element.textContent,
+                )
+            }
+
+            else -> {
+                return Result.failure(Exception("Feed entry has more than one summary element"))
+            }
+        }
+
         // > atom:entry elements MUST contain exactly one atom:updated element.
         // Source: https://tools.ietf.org/html/rfc4287
         val updated =
@@ -213,6 +243,7 @@ fun atomEntries(document: Document): Result<List<AtomEntry>> {
             authorName = authorName,
             content = content,
             links = links,
+            summary = summary,
         )
     }
 
