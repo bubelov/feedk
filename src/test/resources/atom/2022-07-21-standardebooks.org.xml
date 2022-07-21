@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://standardebooks.org/feeds/atom/style" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <id>https://standardebooks.org/feeds/atom/new-releases</id>
+    <link href="https://standardebooks.org/feeds/atom/new-releases" rel="self" type="application/atom+xml"/>
+    <title>Standard Ebooks - Newest Ebooks</title>
+    <subtitle>The 15 latest Standard Ebooks, most-recently-released first.</subtitle>
+    <icon>https://standardebooks.org/images/logo.png</icon>
+    <updated>2022-07-20T20:14:22Z</updated>
+    <author>
+        <name>Standard Ebooks</name>
+        <uri>https://standardebooks.org</uri>
+    </author>
+    <link href="https://standardebooks.org/ebooks/opensearch" rel="search" type="application/opensearchdescription+xml"/>
+    <entry>
+        <id>https://standardebooks.org/ebooks/lord-dunsany/fifty-one-tales</id>
+        <title>Fifty-One Tales</title>
+        <author>
+            <name>Lord Dunsany</name>
+            <uri>https://standardebooks.org/ebooks/lord-dunsany</uri>
+        </author>
+        <published>2022-07-20T20:09:11Z</published>
+        <updated>2022-07-20T20:11:06Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A series of otherworldly short stories ranging from the moral to the whimsical.</summary>
+        <content type="html">&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/lord-dunsany"&gt;Lord Dunsany&lt;/a&gt; earned literary fame through his otherworldly short stories. This book compiles fifty-one of them, without a seeming theme except that theyâ€™re extremely shortâ€”sometimes as short as a few paragraphs. The stories range from morality tales, to dreamlike vignettes, to gloomy prophecies told in a foreboding voice. A thread of bleak humor sometimes runs through them, like with much of Dunsanyâ€™s literary output.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Fifty-One Tales&lt;/i&gt; was published simultaneously in England and America, with each edition featuring a story that the other did not. This Standard Ebooks edition is based on the ordering of the American edition, and includes the story that was only published in the English edition, bringing the total number of stories in this edition to fifty-two.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Fantasy fiction, English"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fantasy"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Shorts"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/lord-dunsany/fifty-one-tales/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/lord-dunsany/fifty-one-tales" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/lord-dunsany/fifty-one-tales/downloads/lord-dunsany_fifty-one-tales.epub" length="380961" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/lord-dunsany/fifty-one-tales/downloads/lord-dunsany_fifty-one-tales_advanced.epub" length="373778" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/lord-dunsany/fifty-one-tales/downloads/lord-dunsany_fifty-one-tales.kepub.epub" length="386158" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/lord-dunsany/fifty-one-tales/downloads/lord-dunsany_fifty-one-tales.azw3" length="417834" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/jack-london/martin-eden</id>
+        <title>Martin Eden</title>
+        <author>
+            <name>Jack London</name>
+            <uri>https://standardebooks.org/ebooks/jack-london</uri>
+        </author>
+        <published>2022-07-19T16:54:51Z</published>
+        <updated>2022-07-20T15:14:53Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A young working-class man sets out to become a bourgeois writer.</summary>
+        <content type="html">&lt;p&gt;Martin Eden is a young, hard working man of the working class. After a chance encounter with a beautiful woman of the bourgeoisie, he finds himself in love. In order to win this womanâ€™s approval he decides to educate himself: He corrects his speech, he learns proper manners, and he reads the classics of literature, philosophy, and science.&lt;/p&gt; &lt;p&gt;Eventually they become engaged, and he decides to become a writer. But heâ€™s continually flummoxed by the greedy and unintelligent editors who are incapable of understanding his work, and by a society that values money as the pinnacle of success.&lt;/p&gt; &lt;p&gt;In &lt;i&gt;Martin Eden&lt;/i&gt;, &lt;a href="https://standardebooks.org/ebooks/jack-london"&gt;Jack London&lt;/a&gt; weaves in several details from his own life and experience as an early writer. However, unlike the titular character, a self-described â€œindividualistâ€ and â€œNietzsche-man,â€ London was in reality a vocal socialist, and had intended Martin Eden to be an unflattering caricature of a man who seeks only self-improvement instead of class-improvement. Ironically this was unremarked upon in contemporary reviews. As he inscribed in a copy of the novel given to &lt;a href="https://standardebooks.org/ebooks/upton-sinclair"&gt;Upton Sinclair&lt;/a&gt;, â€œOne of my motifs, in this book, was an attack on individualism. I must have bungled it, for not a single reviewer has discovered it.â€&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Working class -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Authors -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Autobiographical fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Bildungsromans"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Young men -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="San Francisco (Calif.) -- Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Satire"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/jack-london/martin-eden/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/jack-london/martin-eden" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/jack-london/martin-eden/downloads/jack-london_martin-eden.epub" length="864686" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/jack-london/martin-eden/downloads/jack-london_martin-eden_advanced.epub" length="933688" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/jack-london/martin-eden/downloads/jack-london_martin-eden.kepub.epub" length="919691" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/jack-london/martin-eden/downloads/jack-london_martin-eden.azw3" length="1080776" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/hugh-lofting/the-voyages-of-doctor-dolittle</id>
+        <title>The Voyages of Doctor Dolittle</title>
+        <author>
+            <name>Hugh Lofting</name>
+            <uri>https://standardebooks.org/ebooks/hugh-lofting</uri>
+        </author>
+        <published>2022-07-18T20:26:23Z</published>
+        <updated>2022-07-19T16:29:17Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A young boy begins his apprenticeship with Doctor Dolittle, accompanying him on a series of adventures in search of a floating island and a missing naturalist.</summary>
+        <content type="html">&lt;p&gt;After discovering an injured squirrel, young Tommy Stubbins is introduced to Doctor Dolittle. Enamored by the Doctorâ€™s ability to speak with animals and his wonderful house full of creatures from around the world, Tommy convinces the Doctor to take him as an apprentice. Together with Polynesia the parrot, Jip the dog, and an African prince named Bumpo, they set out in search of the famed naturalist Long Arrow, son of Golden Arrow, who has gone missing.&lt;/p&gt; &lt;p&gt;This is the second book in &lt;a href="https://standardebooks.org/ebooks/hugh-lofting"&gt;Hugh Loftingâ€™s&lt;/a&gt; &lt;a href="https://standardebooks.org/collections/doctor-dolittle"&gt;Doctor Dolittle series&lt;/a&gt;. It was awarded the 1923 &lt;a href="https://standardebooks.org/collections/newbery-medal-winners"&gt;Newbery Medal&lt;/a&gt;.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Fantasy literature"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Animals -- Juvenile fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Voyages and travels -- Juvenile fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Human-animal communication -- Juvenile fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Adventure"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Childrenâ€™s"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fiction"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/hugh-lofting/the-voyages-of-doctor-dolittle/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/hugh-lofting/the-voyages-of-doctor-dolittle" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/hugh-lofting/the-voyages-of-doctor-dolittle/downloads/hugh-lofting_the-voyages-of-doctor-dolittle.epub" length="644111" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/hugh-lofting/the-voyages-of-doctor-dolittle/downloads/hugh-lofting_the-voyages-of-doctor-dolittle_advanced.epub" length="1034980" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/hugh-lofting/the-voyages-of-doctor-dolittle/downloads/hugh-lofting_the-voyages-of-doctor-dolittle.kepub.epub" length="674130" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/hugh-lofting/the-voyages-of-doctor-dolittle/downloads/hugh-lofting_the-voyages-of-doctor-dolittle.azw3" length="760541" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/p-g-wodehouse/a-prefects-uncle</id>
+        <title>A Prefectâ€™s Uncle</title>
+        <author>
+            <name>P. G. Wodehouse</name>
+            <uri>https://standardebooks.org/ebooks/p-g-wodehouse</uri>
+        </author>
+        <published>2022-07-14T19:50:14Z</published>
+        <updated>2022-07-14T19:50:17Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A boyâ€™s life at boarding school is disrupted by an uncle that heâ€™s never met before.</summary>
+        <content type="html">&lt;p&gt;A new term is beginning at Beckford College, and â€œBishopâ€ Gethryn seems to have it all: Heâ€™s the head prefect of his schoolhouse, a top athlete on both the cricket and rugby teams, and is respected by his schoolmates and the Headmaster. But when his uncle arrives at the school, Gethrynâ€™s world (and that of the schoolâ€™s cricket team) is upended.&lt;/p&gt; &lt;p&gt;&lt;i&gt;The Prefectâ€™s Uncle&lt;/i&gt; is &lt;a href="https://standardebooks.org/ebooks/p-g-wodehouse"&gt;P. G. Wodehouseâ€™s&lt;/a&gt; second novel, and was first published in 1903.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Schools -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Humorous stories"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Uncles -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Schoolboys -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Cricket stories"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Comedy"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fiction"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/p-g-wodehouse/a-prefects-uncle/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/a-prefects-uncle" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/a-prefects-uncle/downloads/p-g-wodehouse_a-prefects-uncle.epub" length="567733" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/a-prefects-uncle/downloads/p-g-wodehouse_a-prefects-uncle_advanced.epub" length="954628" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/a-prefects-uncle/downloads/p-g-wodehouse_a-prefects-uncle.kepub.epub" length="588018" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/a-prefects-uncle/downloads/p-g-wodehouse_a-prefects-uncle.azw3" length="655220" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/alexandre-dumas/the-vicomte-de-bragelonne/george-routledge-and-co</id>
+        <title>The Vicomte de Bragelonne</title>
+        <author>
+            <name>Alexandre Dumas</name>
+            <uri>https://standardebooks.org/ebooks/alexandre-dumas</uri>
+        </author>
+        <published>2022-07-13T17:45:56Z</published>
+        <updated>2022-07-20T19:35:51Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">The events of the early days of Louis XIVâ€™s majority reign in France, including the continuing story of the four musketeers who served both Louis XIVâ€™s father and himself.</summary>
+        <content type="html">&lt;p&gt;The last and longest of &lt;a href="https://standardebooks.org/ebooks/alexandre-dumas"&gt;Dumasâ€™&lt;/a&gt; three &lt;a href="https://standardebooks.org/collections/dartagnan-romances"&gt;dâ€™Artagnan&lt;/a&gt; novels, &lt;i&gt;The Vicomte de Bragelonne&lt;/i&gt; finds the four musketeers, Aramis, Athos, Porthos, and dâ€™Artagnan, in their later years, and for the first time keeping secrets that are not to be shared with each other.&lt;/p&gt; &lt;p&gt;Louis XIV is now an adult, and the regency of his mother is at an end. Dâ€™Artagnan is still his Lieutenant of Musketeers, Athos has raised his son Raoul (the Vicomte de Bragelonne of the title) to adulthood, and Aramis and Porthos are engaged in a mystery that is not touched on until well into the novel. There are adventures involving Charles II of England, the son of the doomed king the musketeers could not save from Cromwell in &lt;i&gt;&lt;a href="https://standardebooks.org/ebooks/alexandre-dumas/twenty-years-after/estes-and-lauriat"&gt;Twenty Years After&lt;/a&gt;&lt;/i&gt;, romances of Louisâ€™ early court, intrigues involving Louisâ€™ finance ministers, and, ultimately, Dumasâ€™ fictional explanation of a centuries-long mystery involving an unidentified prisoner in the Bastille.&lt;/p&gt; &lt;p&gt;The original French serialization of &lt;i&gt;The Vicomte de Bragelonne&lt;/i&gt; took three years because of the size of the work. English translations were typically divided into three, four, or occasionally as many as six parts; in the three-volume editions, each volume had as many words as &lt;i&gt;&lt;a href="https://standardebooks.org/ebooks/alexandre-dumas/the-three-musketeers/william-robson"&gt;The Three Musketeers&lt;/a&gt;&lt;/i&gt;. This edition is presented in a single ebook.&lt;/p&gt; &lt;p&gt;&lt;i&gt;The Vicomte de Bragelonne&lt;/i&gt; brings a satisfying conclusion to one of the greatest adventure series of all time. Like &lt;i&gt;The Three Musketeers&lt;/i&gt;, the final part of &lt;i&gt;The Vicomte de Bragelonne&lt;/i&gt;, â€œThe Man in the Iron Mask,â€ has been adapted many times for stage, film, television, and animation.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Historical fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="France -- History -- Louis XIV, 1643-1715 -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Adventure stories"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Swordsmen -- Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Adventure"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/alexandre-dumas/the-vicomte-de-bragelonne/george-routledge-and-co/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/alexandre-dumas/the-vicomte-de-bragelonne/george-routledge-and-co" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/alexandre-dumas/the-vicomte-de-bragelonne/george-routledge-and-co/downloads/alexandre-dumas_the-vicomte-de-bragelonne_george-routledge-and-co.epub" length="2323249" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/alexandre-dumas/the-vicomte-de-bragelonne/george-routledge-and-co/downloads/alexandre-dumas_the-vicomte-de-bragelonne_george-routledge-and-co_advanced.epub" length="2603742" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/alexandre-dumas/the-vicomte-de-bragelonne/george-routledge-and-co/downloads/alexandre-dumas_the-vicomte-de-bragelonne_george-routledge-and-co.kepub.epub" length="2620101" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/alexandre-dumas/the-vicomte-de-bragelonne/george-routledge-and-co/downloads/alexandre-dumas_the-vicomte-de-bragelonne_george-routledge-and-co.azw3" length="3613795" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/henry-adams/democracy</id>
+        <title>Democracy</title>
+        <author>
+            <name>Henry Adams</name>
+            <uri>https://standardebooks.org/ebooks/henry-adams</uri>
+        </author>
+        <published>2022-07-06T21:20:42Z</published>
+        <updated>2022-07-06T21:49:39Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A wealthy New York widow moves to Washington, DC, hoping to get â€œto the heart of the great American mystery of democracy and government.â€</summary>
+        <content type="html">&lt;p&gt;At age thirty, Madeleine Lee, a wealthy, wellborn widow, has tired of Gilded Age New York and its shallow society. She decides to spend the winter in Washington with her sister, renting a house on Lafayette Square, within easy reach of all the intense partying, horse-trading, and other activities that politics requires.&lt;/p&gt; &lt;p&gt;As she makes friends (and enemies) with the locals, one question remains uppermost in Madeleine Leeâ€™s mind: â€œWho, then, is right? How &lt;em&gt;can&lt;/em&gt; we all be right? Half of our wise men declare that the world is going straight to perdition; the other half that it is fast becoming perfect. Both cannot be right. There is only one thing in life that I must and will have before I die. I must know whether America is right or wrong.â€&lt;/p&gt; &lt;p&gt;She visits the White House, George Washingtonâ€™s estate, and the newly established Arlington Cemetery, accompanied by politicians, diplomats, aristocrats, and the newly rich. But itâ€™s not until a marriage offer from an ambitious senator that things come to a head. Mrs. Lee must decide what she is and isnâ€™t willing to do to satisfy her own ambition for power, and whether she can trust herself to use that power for good.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Democracy: An American Novel&lt;/i&gt; was first published anonymously on April Foolsâ€™ Day in 1880. The fact that &lt;a href="https://standardebooks.org/ebooks/henry-adams"&gt;Adams&lt;/a&gt; hid his identity helped make it a best seller, as readers tried to guess who was close enough to Washington society to portray it so knowinglyâ€”and maliciously.&lt;/p&gt; &lt;p&gt;It wasnâ€™t until two full years after Adamsâ€™s death that his publisher identified him as the novelâ€™s author.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Widows -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Political fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Washington (D.C.) -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Legislators -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Socialites -- Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Satire"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/henry-adams/democracy/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/henry-adams/democracy" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/henry-adams/democracy/downloads/henry-adams_democracy.epub" length="586067" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/henry-adams/democracy/downloads/henry-adams_democracy_advanced.epub" length="1006081" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/henry-adams/democracy/downloads/henry-adams_democracy.kepub.epub" length="614712" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/henry-adams/democracy/downloads/henry-adams_democracy.azw3" length="720277" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/jules-verne/in-search-of-the-castaways/j-b-lippincott-co</id>
+        <title>In Search of the Castaways</title>
+        <author>
+            <name>Jules Verne</name>
+            <uri>https://standardebooks.org/ebooks/jules-verne</uri>
+        </author>
+        <published>2022-07-05T04:31:30Z</published>
+        <updated>2022-07-05T04:32:06Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A Scottish lord and lady set off on a quest to find and rescue the shipwrecked Captain Grant.</summary>
+        <content type="html">&lt;p&gt;Following the clues found in a bottle cast into the ocean, Lord and Lady Genarvan set off for South America and Australia in their ship &lt;i&gt;Duncan&lt;/i&gt; to search for the shipwrecked Captain Grant. Their eventful and perilous journey gives &lt;a href="https://standardebooks.org/ebooks/jules-verne"&gt;Verne&lt;/a&gt; the opportunity to describe a variety of exotic places.&lt;/p&gt; &lt;p&gt;Originally titled &lt;i lang="fr"&gt;Les Enfants du Capitaine Grant&lt;/i&gt; (â€œThe Children of Captain Grantâ€), the story has inspired several movie adaptations. Ayrton, one of the characters, reappears in &lt;a href="https://standardebooks.org/ebooks/jules-verne/the-mysterious-island/stephen-w-white"&gt;The Mysterious Island&lt;/a&gt;.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Australia -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Ship captains -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="South America -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Voyages and travels -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Seafaring life -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Castaways -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Ocean travel -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="New Zealand -- Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fiction"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/jules-verne/in-search-of-the-castaways/j-b-lippincott-co/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/in-search-of-the-castaways/j-b-lippincott-co" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/in-search-of-the-castaways/j-b-lippincott-co/downloads/jules-verne_in-search-of-the-castaways_j-b-lippincott-co.epub" length="1021426" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/in-search-of-the-castaways/j-b-lippincott-co/downloads/jules-verne_in-search-of-the-castaways_j-b-lippincott-co_advanced.epub" length="1336041" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/in-search-of-the-castaways/j-b-lippincott-co/downloads/jules-verne_in-search-of-the-castaways_j-b-lippincott-co.kepub.epub" length="1078886" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/in-search-of-the-castaways/j-b-lippincott-co/downloads/jules-verne_in-search-of-the-castaways_j-b-lippincott-co.azw3" length="1285543" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/p-g-wodehouse/mike</id>
+        <title>Mike</title>
+        <author>
+            <name>P. G. Wodehouse</name>
+            <uri>https://standardebooks.org/ebooks/p-g-wodehouse</uri>
+        </author>
+        <published>2022-07-04T23:45:12Z</published>
+        <updated>2022-07-04T23:46:16Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A boyâ€™s adventures in public school are filled with cricket, colorful characters, and a great deal of fun at the expense of authoritarian school masters.</summary>
+        <content type="html">&lt;p&gt;Mike Jackson is the youngest son of a family of excellent cricket players and the most promising batsman of them all. At Wrykyn, the public school his elder brothers once attended, his desire to prove himself as a cricketer is challenged by his apathy for studying and his penchant for mischief. In the second half of the novel, his poor academics result in his being sent to Sedleigh, where he immediately befriends Psmith, an eccentric monocle-wearing student in a similar situation. Together they navigate the social waters of a school that neither one of them wants to attend.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Mike&lt;/i&gt; was one of &lt;a href="https://standardebooks.org/ebooks/p-g-wodehouse"&gt;P. G. Wodehouseâ€™s&lt;/a&gt; earlier novels, and one of his personal favorites. In a preface to a later edition, he stated that the school setting allowed Psmithâ€™s â€œbland clashings with Authorityâ€ to truly shine. The cricket scenes are memorable and exciting, but the meat of the story is in Mike and Psmithâ€™s school escapades.&lt;/p&gt; &lt;p&gt;Mike was originally published in &lt;i&gt;The Captain&lt;/i&gt; magazine in two parts, &lt;i&gt;Jackson Junior&lt;/i&gt; (published in 1953 as &lt;i&gt;Mike at Wrykyn&lt;/i&gt;), and &lt;i&gt;The Lost Lambs&lt;/i&gt; (also published later as &lt;i&gt;Enter Psmith&lt;/i&gt; in 1935 and &lt;i&gt;Mike and Psmith&lt;/i&gt; in 1953).&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Boarding schools -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Schools -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Humorous stories"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="England -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Cricket -- Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Comedy"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/p-g-wodehouse/mike/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/mike" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/mike/downloads/p-g-wodehouse_mike.epub" length="560923" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/mike/downloads/p-g-wodehouse_mike_advanced.epub" length="737152" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/mike/downloads/p-g-wodehouse_mike.kepub.epub" length="617281" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/p-g-wodehouse/mike/downloads/p-g-wodehouse_mike.azw3" length="752322" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/jules-verne/michael-strogoff/w-h-g-kingston</id>
+        <title>Michael Strogoff</title>
+        <author>
+            <name>Jules Verne</name>
+            <uri>https://standardebooks.org/ebooks/jules-verne</uri>
+        </author>
+        <published>2022-06-30T00:33:40Z</published>
+        <updated>2022-06-30T00:46:48Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A courier of the Russian Czar must race against time and the Siberian elements to deliver a crucial message of an impeding Tartar invasion and possible treachery.</summary>
+        <content type="html">&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/jules-verne"&gt;Jules Verne&lt;/a&gt; is perhaps best known for his science fiction stories, and &lt;i&gt;Michael Strogoff&lt;/i&gt; breaks that mold. Itâ€™s a true-to-life tale of the titular characterâ€™s journey across Siberia to deliver an important message to the brother of the Russian Czar.&lt;/p&gt; &lt;p&gt;Like other of Verneâ€™s works, Strogoff encounters many colorful characters along the way, and together they create a vivid depiction of the harsh life in Russo-Siberia, as well as the resilient spirit of its inhabitants. The attention to detail and the accuracy of both the physical and geographical depictions of Siberia was noted by contemporaries, though itâ€™s also said that Verne took some dramatic license in recreating some of the historical events.&lt;/p&gt; &lt;p&gt;Contemporary critics agreed that &lt;i&gt;Michael Strogoff&lt;/i&gt; is a thrilling tale of the strength of men, of patriotism, and of the devotion of one human being to another. Modern critics consider it to be one of Verneâ€™s best novels.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Historical fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Russia -- History -- Alexander II, 1855-1881"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Heroes -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Tartars fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fiction"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/jules-verne/michael-strogoff/w-h-g-kingston/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/michael-strogoff/w-h-g-kingston" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/michael-strogoff/w-h-g-kingston/downloads/jules-verne_michael-strogoff_w-h-g-kingston.epub" length="846959" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/michael-strogoff/w-h-g-kingston/downloads/jules-verne_michael-strogoff_w-h-g-kingston_advanced.epub" length="1189879" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/michael-strogoff/w-h-g-kingston/downloads/jules-verne_michael-strogoff_w-h-g-kingston.kepub.epub" length="881788" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/jules-verne/michael-strogoff/w-h-g-kingston/downloads/jules-verne_michael-strogoff_w-h-g-kingston.azw3" length="1042013" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/john-locke/some-thoughts-concerning-education</id>
+        <title>Some Thoughts Concerning Education</title>
+        <author>
+            <name>John Locke</name>
+            <uri>https://standardebooks.org/ebooks/john-locke</uri>
+        </author>
+        <published>2022-06-27T20:21:45Z</published>
+        <updated>2022-06-27T20:22:14Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">John Locke outlines his philosophy of childhood education.</summary>
+        <content type="html">&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/john-locke"&gt;John Locke&lt;/a&gt;, the English philosopher considered to be the most influential of Enlightenment thinkers, never married or had children. Despite this, in 1684 his friends Mary and Edward Clarke asked him for advice on how to raise their son. In response, Locke composed a series of letters to them that outlined his philosophy of education.&lt;/p&gt; &lt;p&gt;In 1693, encouraged by the Clarkes and by his friend William Molyneux, he compiled the letters into a single treatise. This treatise, &lt;i&gt;Some Thoughts Concerning Education&lt;/i&gt;, went on to become the most influential works in educational philosophy in England for over a century, and was so influential on society as a whole that some critics consider it to be equally as important as his &lt;i&gt;Essay Concerning Human Understanding&lt;/i&gt;. The &lt;i&gt;Thoughts&lt;/i&gt; went through at least fifty-three editions in the eighteenth century alone, and inspired a movement for childhood education then-unheard of in Europe, ultimately resulting in the popularization of Victorian public schools.&lt;/p&gt; &lt;p&gt;In the &lt;i&gt;Thoughts&lt;/i&gt;, Locke advocates a practical education for a child consisting of exposure to foreign languages, gentle introductions to topics like reading and mathematics through game-like approaches, physical training and exercise, and rhetoric, all delivered by a competent and dedicated tutor. He placed the instillation of a sense of virtue as one of the most important parts of a complete education.&lt;/p&gt; &lt;p&gt;Education was to be administered through gentle encouragement focused on the childâ€™s natural interests, and tempered with both shame and a feeling of awe for the parent. He argues that much of a childâ€™s social education is received at a very young age from their peers and the society around them; thus, controlling the societal influences around the child is of paramount importance. All of this was starkly opposed to the then-common theory of education through rote repetition, enforced with beatings.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Some Thoughts Concerning Education&lt;/i&gt;â€™s influence continues to the modern day, where its principles and techniques are embraced by Montessori-style education, and even television shows like &lt;i&gt;Sesame Street&lt;/i&gt;.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Education"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Philosophy"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/john-locke/some-thoughts-concerning-education/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/john-locke/some-thoughts-concerning-education" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/john-locke/some-thoughts-concerning-education/downloads/john-locke_some-thoughts-concerning-education.epub" length="634228" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/john-locke/some-thoughts-concerning-education/downloads/john-locke_some-thoughts-concerning-education_advanced.epub" length="571697" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/john-locke/some-thoughts-concerning-education/downloads/john-locke_some-thoughts-concerning-education.kepub.epub" length="650895" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/john-locke/some-thoughts-concerning-education/downloads/john-locke_some-thoughts-concerning-education.azw3" length="779914" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/henryk-sienkiewicz/pan-michael/jeremiah-curtin</id>
+        <title>Pan Michael</title>
+        <author>
+            <name>Henryk Sienkiewicz</name>
+            <uri>https://standardebooks.org/ebooks/henryk-sienkiewicz</uri>
+        </author>
+        <published>2022-06-27T17:16:15Z</published>
+        <updated>2022-07-01T22:01:48Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A Turkish invasion of 17th century Poland threatens the entire Commonwealth.</summary>
+        <content type="html">&lt;p&gt;The third and final book of &lt;a href="https://standardebooks.org/ebooks/henryk-sienkiewicz"&gt;Henryk Sienkiewiczâ€™s&lt;/a&gt; &lt;a href="https://standardebooks.org/collections/the-trilogy"&gt;Trilogy&lt;/a&gt; takes a closer and more intimate look at one of the seriesâ€™ protagonists: Pan Michael Volodyovski.&lt;/p&gt; &lt;p&gt;The Polish Commonwealth has been through intense periods of war, and the peace that follows leaves one of its greatest heroes, Pan Michael, finally free to marry his beloved Panna Anusia. But in a twist of fate, she falls ill and dies, leaving Michael despairing of lifeâ€”to the point of him joining a monastery. His friends, shocked at the loss of the great knight which has now left the Commonwealth unprotected, hatch a plan to bring him back to his true calling.&lt;/p&gt; &lt;p&gt;As with many of the characters in the Trilogy, Michael is fictional but based heavily on historical record: his characterâ€™s exploits and circumstances owe a lot to the real Polish knight Jerzy WoÅ‚odyjowski, who was also in Jan Sobieskiâ€™s cavalry.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Pan Michael&lt;/i&gt; was, like the other books in the Trilogy, initially serialized in Sienkiewiczâ€™s newspaper &lt;i lang="pl"&gt;SÅ‚owo&lt;/i&gt;, before being collected into a novel five years later in 1893. The book, and the Trilogy as a whole, was very well received, and allowed Sienkiewicz to resign his editorial post to focus on his novels.&lt;/p&gt; &lt;p&gt;The novel was the first of the Trilogy to be filmed (as 1969â€™s &lt;i&gt;Colonel Wolodyjowski&lt;/i&gt;), and it was also later converted into a successful television series in Poland. This edition is based on the 1893 translation by Jeremiah Curtin.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Historical fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Poland -- History -- Michael Wisniowiecki, 1669-1673 -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Poland -- History -- 17th century -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Michal Korybut Wisniowiecki, King of Poland, 1640-1673 -- Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fiction"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/henryk-sienkiewicz/pan-michael/jeremiah-curtin/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/henryk-sienkiewicz/pan-michael/jeremiah-curtin" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/henryk-sienkiewicz/pan-michael/jeremiah-curtin/downloads/henryk-sienkiewicz_pan-michael_jeremiah-curtin.epub" length="988738" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/henryk-sienkiewicz/pan-michael/jeremiah-curtin/downloads/henryk-sienkiewicz_pan-michael_jeremiah-curtin_advanced.epub" length="988958" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/henryk-sienkiewicz/pan-michael/jeremiah-curtin/downloads/henryk-sienkiewicz_pan-michael_jeremiah-curtin.kepub.epub" length="1056986" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/henryk-sienkiewicz/pan-michael/jeremiah-curtin/downloads/henryk-sienkiewicz_pan-michael_jeremiah-curtin.azw3" length="1321614" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett</id>
+        <title>Dialogues</title>
+        <author>
+            <name>Plato</name>
+            <uri>https://standardebooks.org/ebooks/plato</uri>
+        </author>
+        <published>2022-06-25T16:13:45Z</published>
+        <updated>2022-07-20T04:50:31Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">A collection of Platoâ€™s dialogues.</summary>
+        <content type="html">&lt;p&gt;Alfred North Whitehead once said, â€œthe safest general characterization of the European philosophical tradition is that it consists of a series of footnotes to &lt;a href="https://standardebooks.org/ebooks/plato"&gt;Plato&lt;/a&gt;.â€&lt;/p&gt; &lt;p&gt;Itâ€™s hard to overstate Platoâ€™s influence on the Westâ€™s philosophical heritage and its civilization. As the first philosopher whose works survived to the present day, his writings and ideas are often characterized as the starting point of Western philosophy. Nor was his influence confined to the modern form of philosophyâ€”Plato also affected political, religious, and spiritual thinkers, including early Christian theologians.&lt;/p&gt; &lt;p&gt;Platoâ€™s works are written as dramatic dialogues. His focus is often on following the argument itselfâ€”the â€œdialecticâ€â€”rather than working toward a specific conclusion. His mentor, Socrates, is frequently the principal speaker, but scholars still debate whether Plato was expressing Socratesâ€™ views or merely using Socrates as a mouthpiece for his own ideas.&lt;/p&gt; &lt;p&gt;In general, there are forty-five major works attributed to Plato, and all but one are dialogues. Modern scholars agree that roughly half of those were definitely written by him, some of those are definitely forgeries, and the rest theyâ€™re still unsure about. In this translation Jowett includes all but one of the works that modern scholars agree are authentic, along with an appendix of selected spurious dialogues. Over time, opinion on which works attributed to Plato were definitely written by him has changed; the only work that modern scholars believe is authentic that Jowett doesnâ€™t include in this collection is â€œHippias Major.â€&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Classical Literature"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Philosophy, Ancient"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Ethics -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Knowledge, Theory of -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Temperance (Virtue)"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Language and languages -- Philosophy"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Justice -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Dialogues, Greek -- Translations into English"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Wealth -- Moral and ethical aspects"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Virtue"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Logic -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Sophists (Greek philosophy)"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Piety"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Political science -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Poetics -- History -- To 1500"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Aesthetics, Ancient"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Courage"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="State, The -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Friendship -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Rhetoric, Ancient"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Rhetoric -- Philosophy"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Virtue -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Dialectic"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Reasoning"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Ontology -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Immortality (Philosophy)"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Rhetoric -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Love -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Soul -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Pleasure"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Utopias -- Early works to 1800"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Logic, Ancient"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Ontology"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Methodology"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Meaning (Philosophy)"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Cosmology -- Early works to 1800"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Philosophy"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett/downloads/plato_dialogues_benjamin-jowett.epub" length="2919068" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett/downloads/plato_dialogues_benjamin-jowett_advanced.epub" length="2915872" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett/downloads/plato_dialogues_benjamin-jowett.kepub.epub" length="3364257" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett/downloads/plato_dialogues_benjamin-jowett.azw3" length="5363436" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/l-t-hobhouse/liberalism</id>
+        <title>Liberalism</title>
+        <author>
+            <name>L. T. Hobhouse</name>
+            <uri>https://standardebooks.org/ebooks/l-t-hobhouse</uri>
+        </author>
+        <published>2022-06-22T18:26:09Z</published>
+        <updated>2022-06-22T18:26:11Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">An early twentieth century description of the philosophy of liberal socialism.</summary>
+        <content type="html">&lt;p&gt;In &lt;i&gt;Liberalism&lt;/i&gt;, &lt;a href="https://standardebooks.org/ebooks/l-t-hobhouse"&gt;L. T. Hobhouse&lt;/a&gt; explains the philosophy of what he calls â€œliberal socialism.â€ Liberalism, as Hobhouse defines it, is the freedom from coercion. Crucially, this means freedom not only from government coercion, but from all forms of coercion, including economic coercion. Itâ€™s important that everyone is free to grow and develop their own individuality within society, but the government has the ultimate responsibility to ensure that one individualâ€™s freedom is not used to limit the freedom of another.&lt;/p&gt; &lt;p&gt;The socialist aspect of the philosophy is the belief that people are not purely self-serving and are capable of voluntarily exercising restraint when needed in order to help society flourish. Viewed through this lens, liberty and equality are not in competition, but rather go hand in hand. In a liberal socialist society, â€œany common life based on the avoidable suffering even of one of those who partake in it is a life not of harmony, but of discord.â€&lt;/p&gt; &lt;p&gt;Tracing the history of the idea of liberalism, from pre-liberal societies, to the philosophies forged in the French and American revolutions, to the concept of socialism expounded by &lt;a href="https://standardebooks.org/ebooks/john-stuart-mill"&gt;John Stuart Mill&lt;/a&gt;, Hobhouse defends the progress of liberalism, while asking what the future of liberalism should look like.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Liberalism -- Great Britain"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Great Britain -- Politics and government -- 1837-1901"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Nonfiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Philosophy"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/l-t-hobhouse/liberalism/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/l-t-hobhouse/liberalism" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/l-t-hobhouse/liberalism/downloads/l-t-hobhouse_liberalism.epub" length="577572" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/l-t-hobhouse/liberalism/downloads/l-t-hobhouse_liberalism_advanced.epub" length="699800" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/l-t-hobhouse/liberalism/downloads/l-t-hobhouse_liberalism.kepub.epub" length="588958" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/l-t-hobhouse/liberalism/downloads/l-t-hobhouse_liberalism.azw3" length="675645" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/johnston-mcculley/the-mark-of-zorro</id>
+        <title>The Mark of Zorro</title>
+        <author>
+            <name>Johnston McCulley</name>
+            <uri>https://standardebooks.org/ebooks/johnston-mcculley</uri>
+        </author>
+        <published>2022-06-13T17:59:58Z</published>
+        <updated>2022-06-14T14:23:25Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">While mild-mannered Don Diego Vega seeks a bride, the cloaked crusader SeÃ±or Zorro rides the dangerous highway of Mexican California, armed with a sword, whip, and pistolâ€”righting wrongs, defending the weak, and punishing injustice.</summary>
+        <content type="html">&lt;p&gt;While mild-mannered Don Diego Vega seeks a bride, cloaked crusader SeÃ±or Zorro (Spanish for â€œMr. Foxâ€) rides the dangerous highway of Mexican California armed with a sword, whip, and pistolâ€”righting wrongs, defending the weak, and punishing injustice.&lt;/p&gt; &lt;p&gt;The story is set in Reina de Los Angeles, a town in southern California circa 1800 when California was still a part of Mexico, and when Mexico was controlled by Spain. The Los Angeles of this time is populated by four societies that must coexist, but that coexistence is out of balance.&lt;/p&gt; &lt;p&gt;The oldest and weakest group is the â€œnativesâ€ who live in the pueblo. Next come the clergy, the &lt;i&gt;friales&lt;/i&gt; who first planted the orchards and who live in the missions. Then, the gentry, who live as dons and doÃ±as on feudal estates, or haciendas. Finally, the land is ruled by the strongest of these powers, an unjust governor in San Francisco de Asis. He controls the army under whose rule the natives are abused, the &lt;i&gt;friales&lt;/i&gt; mistreated, and the gentry disrespected. This is the story of a young man of â€œgood bloodâ€ who decides he must restore balance to this frontier society.&lt;/p&gt; &lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/johnston-mcculley"&gt;Johnston McCulley&lt;/a&gt; wrote stories of Zorro for forty years. This, his first Zorro story, was originally serialized in a magazine as &lt;i&gt;The Curse of Capistrano&lt;/i&gt;. SeÃ±or Zorro went on to leave a deep impression on popular culture, and has appeared in the work of many other authors and artists, in many media, ever since.&lt;/p&gt; &lt;p&gt;One reason the character of Zorro endures is that he carries on a tradition of daring and heroic figures, both literary and historic, who precede him. Best known perhaps are the medieval Robin Hood of English folklore whose â€œmerry menâ€ are reminiscent of Zorroâ€™s â€œavengers,â€ and the &lt;a href="https://standardebooks.org/collections/scarlet-pimpernel"&gt;Scarlet Pimpernel&lt;/a&gt; of revolutionary France. Lesser known is the real-life figure William Lamport, the â€œIrish Zorro,â€ whose statue still stands in Mexico City.&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Western stories"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Aristocracy (Social class) -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="California -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Vigilantes -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Spaniards -- California -- Fiction"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Zorro (Fictitious character) -- Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fiction"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/johnston-mcculley/the-mark-of-zorro/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/johnston-mcculley/the-mark-of-zorro" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/johnston-mcculley/the-mark-of-zorro/downloads/johnston-mcculley_the-mark-of-zorro.epub" length="853288" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/johnston-mcculley/the-mark-of-zorro/downloads/johnston-mcculley_the-mark-of-zorro_advanced.epub" length="1417245" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/johnston-mcculley/the-mark-of-zorro/downloads/johnston-mcculley_the-mark-of-zorro.kepub.epub" length="882141" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/johnston-mcculley/the-mark-of-zorro/downloads/johnston-mcculley_the-mark-of-zorro.azw3" length="977002" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+    <entry>
+        <id>https://standardebooks.org/ebooks/richard-f-burton/vikram-and-the-vampire</id>
+        <title>Vikram and the Vampire</title>
+        <author>
+            <name>Richard F. Burton</name>
+            <uri>https://standardebooks.org/ebooks/richard-f-burton</uri>
+        </author>
+        <published>2022-06-11T19:48:27Z</published>
+        <updated>2022-06-26T02:01:29Z</updated>
+        <rights>Public domain in the United States. Users located outside of the United States must check their local laws before using this ebook. Original content released to the public domain via the Creative Commons CC0 1.0 Universal Public Domain Dedication.</rights>
+        <summary type="text">King Vikram becomes trapped in a cycle of stories as he tries to capture a cunning vampire.</summary>
+        <content type="html">&lt;p&gt;&lt;i&gt;Baital Pachisi&lt;/i&gt;, also known as &lt;i&gt;Vikram-Betaal&lt;/i&gt;, is a collection of Hindu tales featuring King Vikramaditya as the hero. Eleven of these tales were adapted from Sanskrit to English by &lt;a href="https://standardebooks.org/ebooks/richard-f-burton"&gt;Richard &lt;abbr&gt;F.&lt;/abbr&gt; Burton&lt;/a&gt; as &lt;i&gt;Vikram and the Vampire&lt;/i&gt;.&lt;/p&gt; &lt;p&gt;A tantric yogi is after King Vikramâ€™s life because of the wrongdoings of his father. He fools the brave king into bringing him Baital (a vampire) hanging from a &lt;i&gt;siras&lt;/i&gt; tree. Baital, in turn, traps the king in an endless loop of stories. If King Vikram answers any question posed by the vampire during his storytelling, the vampire will escape back to the tree, and the king will have to start again. Will King Vikram be able to escape Baitalâ€™s trap? What doom awaits the king when finally meets his nemesis?&lt;/p&gt;</content>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Tales -- India"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Vampires -- India -- Folklore"/>
+        <category scheme="http://purl.org/dc/terms/LCSH" term="Hindus -- Folklore"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Fiction"/>
+        <category scheme="https://standardebooks.org/vocab/subjects" term="Shorts"/>
+        <media:thumbnail height="525" url="https://standardebooks.org/ebooks/richard-f-burton/vikram-and-the-vampire/downloads/cover-thumbnail.jpg" width="350"/>
+        <link href="https://standardebooks.org/ebooks/richard-f-burton/vikram-and-the-vampire" rel="alternate" title="This ebookâ€™s page at Standard Ebooks" type="application/xhtml+xml"/>
+        <link href="https://standardebooks.org/ebooks/richard-f-burton/vikram-and-the-vampire/downloads/richard-f-burton_vikram-and-the-vampire.epub" length="780159" rel="enclosure" title="Recommended compatible epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/richard-f-burton/vikram-and-the-vampire/downloads/richard-f-burton_vikram-and-the-vampire_advanced.epub" length="826964" rel="enclosure" title="Advanced epub" type="application/epub+zip"/>
+        <link href="https://standardebooks.org/ebooks/richard-f-burton/vikram-and-the-vampire/downloads/richard-f-burton_vikram-and-the-vampire.kepub.epub" length="807211" rel="enclosure" title="Kobo Kepub epub" type="application/kepub+zip"/>
+        <link href="https://standardebooks.org/ebooks/richard-f-burton/vikram-and-the-vampire/downloads/richard-f-burton_vikram-and-the-vampire.azw3" length="944042" rel="enclosure" title="Amazon Kindle azw3" type="application/x-mobipocket-ebook"/>
+    </entry>
+</feed>

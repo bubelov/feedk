@@ -35,6 +35,7 @@ sealed class AtomLinkRel {
     object Related : AtomLinkRel()
     object Self : AtomLinkRel()
     object Via : AtomLinkRel()
+    data class Custom(val value: String) : AtomLinkRel()
 }
 
 /*
@@ -226,7 +227,7 @@ private fun Element.toAtomLink(): Result<AtomLink> {
         "related" -> AtomLinkRel.Related
         "self" -> AtomLinkRel.Self
         "via" -> AtomLinkRel.Via
-        else -> return Result.failure(Exception("Unknown rel type: ${getAttribute("rel")}"))
+        else -> AtomLinkRel.Custom(getAttribute("rel"))
     }
 
     val lengthAttrName = "length"
@@ -244,7 +245,7 @@ private fun Element.toAtomLink(): Result<AtomLink> {
             type = getAttribute("type"),
             hreflang = getAttribute("hreflang"),
             title = getAttribute("title"),
-            length = length
+            length = length,
         )
     )
 }
