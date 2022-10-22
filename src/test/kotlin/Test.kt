@@ -1,9 +1,21 @@
 package co.appreactor.feedk
 
 import java.io.File
+import java.net.URL
+import kotlin.test.Ignore
 import kotlin.test.Test
+import kotlin.test.assertIs
 
 class Test {
+
+    @Ignore
+    @Test
+    fun testFeed() {
+        val url = URL("https://michael.stapelberg.ch/feed.xml")
+        val conn = url.openConnection()
+        val res = feed(conn.getInputStream(), "text/xml")
+        assertIs<FeedResult.Success>(res)
+    }
 
     @Test
     fun `Parse Atom feeds`() {
@@ -22,7 +34,7 @@ class Test {
 
         feeds.forEach {
             when (it) {
-                is AtomFeed -> assert(it.entries.getOrThrow().isNotEmpty())
+                is AtomFeed -> assert(it.entries.isNotEmpty())
                 else -> throw Exception("Not an Atom feed")
             }
         }

@@ -6,7 +6,7 @@ import org.w3c.dom.Element
 data class AtomFeed(
     val title: String,
     val links: List<AtomLink>,
-    val entries: Result<List<AtomEntry>>,
+    val entries: List<AtomEntry>,
 ) : Feed()
 
 data class AtomEntry(
@@ -106,11 +106,15 @@ fun atomFeed(document: Document): Result<AtomFeed> {
         .filter { it.tagName == "link" }
         .map { element -> element.toAtomLink().getOrElse { return Result.failure(it) } }
 
+    val entries = atomEntries(document).getOrElse {
+        return Result.failure(it)
+    }
+
     return Result.success(
         AtomFeed(
             title = title,
             links = links,
-            entries = atomEntries(document),
+            entries = entries,
         )
     )
 }
@@ -207,10 +211,16 @@ fun atomEntries(document: Document): Result<List<AtomEntry>> {
             }
         }
 
+        val elementsWithUpdatedTag = entry.getElementsByTagName("updated")
+
         // > atom:entry elements MUST contain exactly one atom:updated element.
         // Source: https://tools.ietf.org/html/rfc4287
-        val updated =
-            entry.getElementsByTagName("updated").item(0).textContent ?: return@mapNotNull null
+        if (elementsWithUpdatedTag.length != 1) {
+            return Result.failure(Exception("atom:entry elements MUST contain exactly one atom:updated element"))
+        }
+
+        val updated = elementsWithUpdatedTag.item(0).textContent
+            ?: return Result.failure(Exception("atom:updated element shouldn't be empty"))
 
         // > atom:entry elements MUST contain exactly one atom:updated element.
         // Source: https://tools.ietf.org/html/rfc4287
